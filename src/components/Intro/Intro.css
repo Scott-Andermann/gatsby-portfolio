@@ -1,0 +1,19 @@
+.avatar {
+    height: 175px;
+    border-radius: 50%;
+}
+
+.intro {
+    text-align: center;
+}
+
+.intro-text {
+    margin-left: 350px;
+    margin-right: 350px;
+    line-height: 2rem;
+    color: #182628
+}
+
+.mountains {
+    z-index: -100;
+}
