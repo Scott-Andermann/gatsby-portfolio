@@ -2,9 +2,6 @@ import * as React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { StaticImage } from "gatsby-plugin-image";
 import './Jobs.css';
-import yamaha from '../../images/yamaha.jpg'
-import husqvarna from '../../images/husqvarna.jpg'
-import wessol from '../../images/flowzone.png'
 import Job from '../Job/Job';
 
 const Jobs = () => {

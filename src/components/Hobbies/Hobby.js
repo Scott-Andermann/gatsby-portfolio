@@ -1,8 +1,8 @@
 import * as React from 'react';
-import gitHubWhite from '../../images/githubWhite.png';
+import gitHubWhite from '../../images/githubwhite.png';
 import flappyBird from '../../images/flappybird2.gif';
 import warranty from '../../images/warranty.png';
-import powerMeter from '../../images/powerMeter.jpg';
+import powerMeter from '../../images/powermeter.jpg';
 import weather from '../../images/weather.png'
 
 
