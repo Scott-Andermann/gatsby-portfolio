@@ -10,9 +10,9 @@
 .intro-text {
     line-height: 2rem;
     color: #182628;
-    height: 8rem;
-    margin-left: 200px;
-    margin-right: 200px;
+    height: 10rem;
+    width: 80%;
+    margin: 16px auto;
 }
 
 .mountains {

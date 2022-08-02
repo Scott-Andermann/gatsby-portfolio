@@ -9,6 +9,11 @@ import {
     navLinkText,
     siteTitle
 } from './layout.module.css';
+import github from '../images/github65ccb8.png';
+import email from '../images/email.png';
+import phone from '../images/phone.png';
+import linkedin from '../images/linkedin.png';
+import './layout.css'
 
 const Layout = ({ pageTitle, children }) => {
     const data = useStaticQuery(graphql`
@@ -38,6 +43,16 @@ const Layout = ({ pageTitle, children }) => {
                 <h2 className={heading2}>I love building new things and fixing old things</h2>
                 {children}
             </main>
+            <footer>
+                
+                <ul className='contact-list'>
+                    <li className='icon-wrapper'><h2>Hit me up:</h2></li>
+                    <li className='icon-wrapper'><a className='contact-text' href='#'><img className='contact-icon' src={email} /> ScottAndermann@gmail.com</a></li>
+                    <li className='icon-wrapper phone'><img className='contact-icon' src={phone} /> 630.863.5072</li>
+                    <li className='icon-wrapper'><a href='#'><img className='contact-icon' src={github} /> Scott-Andermann</a></li>
+                    <li className='icon-wrapper'><a href='https://www.linkedin.com/in/scott-andermann'><img className='contact-icon' src={linkedin} /> ScottAndermann</a></li>
+                </ul>
+            </footer>
         </div>
     )
 }

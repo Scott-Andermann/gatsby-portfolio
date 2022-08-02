@@ -11,10 +11,11 @@ h2 {
 }
 
 .jobs {
-    margin: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    max-width: 800px;
+    max-width: 90%;
+    margin: auto;
     margin-top: 20px;
 }
 
@@ -24,7 +25,7 @@ h2 {
     /* width: 267px; */
     text-align: center;
     margin: 0 20px;
-
+    margin-bottom: 50px;
     border-radius: 10px;
     box-shadow: 3px 3px 3px #65CCB8;
 }

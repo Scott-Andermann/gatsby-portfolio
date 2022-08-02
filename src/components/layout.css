@@ -1,0 +1,21 @@
+.contact-list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.icon-wrapper {
+    list-style: none;
+    margin: auto;
+}
+
+.phone {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.contact-icon {
+    height: 25px;
+    margin-right: 5px;
+}

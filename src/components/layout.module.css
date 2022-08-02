@@ -49,3 +49,23 @@
     text-align: right;
     margin-right: 100px;
 }
+
+footer {
+    background-color: #182628;
+    padding: 2rem;
+}
+
+.contact-list {
+    display: flex;
+    list-style: none;
+}
+
+.icon-wrapper {
+    list-style: none;
+}
+
+.phone {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
