@@ -18,21 +18,21 @@ const Jobs = () => {
     }`)
     // console.log(data.allFile.nodes[0].name);
     const jobData = [    {
-        src: wessol,
+        src: 'wessol',
         title: 'WESSOL, LLC',
         name: 'wessol',
         description: 'Brought new products to market in the professional spraying industry',
         website: 'https://www.wessol.com/'
     },
     {
-        src: yamaha,
+        src: 'yamaha',
         title: 'Yamaha Motors',
         name: 'yamaha',
         description: 'Designed and tested off road recreational vehicles',
         website: 'https://www.yamaha-motor.com/side-by-side'
     },
     {
-        src: husqvarna,
+        src: 'husqvarna',
         title: 'Husqvarna Group',
         name: 'husky',
         description: 'Designed and tested commercial turf care equipment',

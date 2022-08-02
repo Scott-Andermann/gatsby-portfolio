@@ -1,11 +1,29 @@
 import * as React from 'react';
 import gitHubWhite from '../../images/githubWhite.png';
+import flappyBird from '../../images/flappybird2.gif';
+import warranty from '../../images/warranty.png';
+import powerMeter from '../../images/powerMeter.jpg';
+import weather from '../../images/weather.png'
 
 
 const Hobby = (props) => {
+
+    const src = () => {
+        switch (props.src) {
+            case 'powerMeter':
+                return powerMeter;
+            case 'flappy':
+                return flappyBird;
+            case 'weather':
+                return weather;
+            case 'warranty':
+                return warranty;
+        }
+    }
+
     return (
         <div className={`hobby ${props.name}`} >
-            <img className='hobby-image' alt='hobby image' src={props.src} />
+            <img className='hobby-image' alt='hobby image' src={src(props.src)} />
             <div className='hobby-overlay'>
                 <h2 className='hobby-text'>{props.name}</h2>
                 <p className='hobby-text'>{props.description}</p>

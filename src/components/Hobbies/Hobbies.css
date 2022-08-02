@@ -1,7 +1,6 @@
 .top-hobbies {
-    background-color: #f2f2f2;
     padding-top: 5rem;
-
+    margin-top: -9rem;
 }
 
 .hobby-image {
@@ -10,6 +9,18 @@
 }
 
 .hobby-header {
+    background-color: #3B945E;
+    width: 1200px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    height: 4rem;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 4rem;
+    box-shadow: 2px 2px 2px #57BA98
+}
+
+.hobby-header-text {
     text-align: center;
     margin-block-start: 0;
 }
