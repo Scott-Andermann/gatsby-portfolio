@@ -8,12 +8,13 @@
 }
 
 .intro-text {
-    margin-left: 350px;
-    margin-right: 350px;
     line-height: 2rem;
-    color: #182628
+    color: #182628;
+    height: 8rem;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 .mountains {
-    z-index: -100;
+    height: 300px;
 }

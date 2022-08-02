@@ -1,0 +1,69 @@
+.top-hobbies {
+    background-color: #f2f2f2;
+    padding-top: 5rem;
+
+}
+
+.hobby-image {
+    height: 400px;
+    max-width: 600px;
+}
+
+.hobby-header {
+    text-align: center;
+    margin-block-start: 0;
+}
+
+h2 .hobby-header {
+    color:#3B945E
+}
+
+.hobby {
+    width: 600px;
+    height: 400px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.hobby-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hobby-overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 240px;
+    padding: 80px;
+    opacity: 0;
+    border-radius: 10px;
+    transition: opacity .5s linear;
+}
+
+.hobby-overlay:hover {
+    opacity: .9;
+    box-shadow: 3px 3px 3px #3B945E;
+    background-color: #182628;
+}
+
+.hobby-tools {
+    list-style: none;
+    
+}
+.hobby-tools-item {
+    color: #f2f2f2;
+}
+
+.hobby-text {
+    margin: auto;
+    color: #f2f2f2;
+}
+
+.icon {
+    height: 2rem;
+}
