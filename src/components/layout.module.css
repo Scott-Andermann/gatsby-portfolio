@@ -5,12 +5,14 @@
 
 .heading {
     text-align: center;
+    font-size: 3rem;
     color: #3B945E;
 }
 
 .heading2 {
     text-align: center;
-    color: #182628
+    color: #182628;
+    margin-bottom: 4rem;
 }
 
 .nav-links {

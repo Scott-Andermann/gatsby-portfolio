@@ -2,7 +2,7 @@ import * as React from 'react';
 import { StaticImage } from "gatsby-plugin-image";
 import './Intro.css';
 import avatar from '../../images/avatar.jpg';
-import mountains from '../../images/mountains.jpg';
+import mountains from '../../images/mountains.png';
 
 
 const Intro = () => {
