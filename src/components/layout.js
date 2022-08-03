@@ -9,7 +9,6 @@ import email from '../images/email.png';
 import phone from '../images/phone.png';
 import linkedin from '../images/linkedin.png';
 import './layout.css';
-import $ from 'jquery';
 
 const Layout = ({ pageTitle, children }) => {
     const [isShowing, setIsShowing] = useState(false);
