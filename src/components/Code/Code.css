@@ -5,6 +5,8 @@
     background-color: #57BA98;
 }
 
+
+
 .code {
     display: flex;
     margin: auto;
@@ -58,4 +60,52 @@ h4 {
     margin: auto;
     background-color: #65ccb8;
     border-radius: 50%
+}
+
+@media only screen and (max-width: 600px) {
+    .top-code {
+        margin-top: -15rem;
+        padding-top: 26rem;;
+    }
+
+    .icon-container {
+        height: 50px;
+        width: 50px;
+    }
+
+    
+    .skill-icon {
+        height: 30px;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .code {
+        max-width: 95%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .code {
+        flex-direction: column;
+        max-height: 1800px;
+    }
+    .column {
+        position: relative;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .first {
+        border-right: none;
+        border-bottom: 1px solid rgb(216, 216, 216)
+    }
+    
+    .last {
+        border-left: none;
+        border-top: 1px solid rgb(216, 216, 216)
+    }
 }

@@ -18,3 +18,10 @@
 .mountains {
     height: 300px;
 }
+
+@media only screen and (max-width: 800px) {
+    .mountains {
+        width: 100%;
+        height: auto;
+    }
+}

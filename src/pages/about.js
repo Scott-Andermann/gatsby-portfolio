@@ -8,16 +8,7 @@ const AboutPage = ({ data }) => {
     return (
         <main>
             <Layout pageTitle='About'>
-                <p>My name is Scott and I built this site using React and GatsbyJS!</p>
-                <ul>
-                    {
-                        data.allFile.nodes.map(node => (
-                            <li key={node.name}>
-                                {node.name}
-                            </li>
-                        ))
-                    }
-                </ul>
+                <p style={{textAlign:'center'}}>I built this site using React and GatsbyJS!  This page is still a work in progress</p>
             </Layout>
 
         </main>

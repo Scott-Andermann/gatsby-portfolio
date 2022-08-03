@@ -27,7 +27,7 @@ const Hobby = (props) => {
             <div className='hobby-overlay'>
                 <h2 className='hobby-text'>{props.name}</h2>
                 <p className='hobby-text'>{props.description}</p>
-                <h4>Tools used:</h4>
+                <h4 className='hobby-text'>Tools used:</h4>
                 <ul className='hobby-tools'>
                     {props.tools.map(element => <li className='hobby-tools-item'>{element}</li>)}
                 </ul>
