@@ -19,13 +19,18 @@
 }
 
 .contact-form {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     height: 600px;
     width: 500px;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    border: 2px solid white;
+    border: 2px solid #F2F2F2;
     padding: 25px;
     box-sizing: border-box;
 }
@@ -43,9 +48,9 @@
     height: 30px;
     font-weight: 600;
     background-color: transparent;
-    border: 2px solid white;
+    border: 2px solid #F2F2F2;
     transition: 1s cubic-bezier(.075,.82,.165,1);
-    color: white;
+    color: #F2F2F2;
 }
 
 .textarea {
@@ -53,32 +58,42 @@
 }
 
 .contact-label {
-    color: white;
+    color: #F2F2F2;
 }
 
 .submit {
     height: 40px;
     background-color: transparent;
-    border: 2px solid white;
+    border: 2px solid #F2F2F2;
     font-size: 20px;
     font-weight: 600;
-    color: white;
-}
-
-.exit-button {
-    position: absolute;
-    top: 0;
-    right: 0;
+    color: #F2F2F2;
 }
 
 .submit:hover {
     background-color: #57BA98;
-
 }
 
+.exit-button {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    background-color: #3B945E;
+    box-shadow: 2px 2px 2px #57BA98
+}
+
+.exit-button:active {
+    transform: scale(0.95);
+    box-shadow: 1px 1px 1px #57BA98;
+}
 
 .text {
-    color: white;
+    color: #F2F2F2;
 }
 
 .heading {
@@ -107,10 +122,12 @@
     margin-right: 1rem;
     border-radius: 1.5rem;
     font-size: 20px;
+    transition: background-color 0.3s ease;
 }
 
 .nav-link-item:hover {
     background-color: #57BA98;
+
 }
 
 .nav-link-text {
@@ -143,7 +160,7 @@ footer {
 
 .phone {
     font-size: 20px;
-    color: white;
+    color: #F2F2F2;
     text-decoration: none;
 }
 
@@ -160,7 +177,7 @@ footer {
 
 .phone {
     font-size: 20px;
-    color: white;
+    color: #F2F2F2;
     text-decoration: none;
 }
 

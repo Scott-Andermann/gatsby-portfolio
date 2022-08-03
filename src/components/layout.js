@@ -38,6 +38,7 @@ const Layout = ({ pageTitle, children }) => {
             <div>
                 <header className='site-title'>{data.site.siteMetadata.title}</header>
             </div>
+            {/* Need to move contact form to new component since it could be used in places other than Layout */}
             <div className={`contact-form-container`} style={isShowing ? {
                 height: '100%',
                 opacity: 0.9,
@@ -50,7 +51,7 @@ const Layout = ({ pageTitle, children }) => {
             }}>
                 
                 <form className='contact-form'>
-                    <button className='exit-button' onClick={closeForm}>Close</button>
+                    <button className='exit-button' onClick={closeForm}>X</button>
                     <label className='contact-label'>
                         Name
                         <input className='contact-form-input' type='text' name='name' />

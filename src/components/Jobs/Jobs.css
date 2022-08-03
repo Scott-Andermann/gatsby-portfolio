@@ -1,6 +1,6 @@
 
 .job-container {
-    background-color: #182628;
+    background-color: #65CCB8;
     color: #F2F2F2;
     padding-top: 2rem;
     padding-bottom: 12rem;
@@ -29,12 +29,12 @@ h2 {
     margin: 0 20px;
     margin-bottom: 50px;
     border-radius: 10px;
-    box-shadow: 3px 3px 3px #65CCB8;
+    box-shadow: 3px 3px 3px #182628;
 }
 
 .job-header {
     text-align: center;
-    color: #F2F2F2;
+    color: #182628;
 }
 
 .job-image {
