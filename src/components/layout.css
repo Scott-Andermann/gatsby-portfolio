@@ -108,6 +108,10 @@
     margin-bottom: 4rem;
 }
 
+nav {
+    margin-top: 40px;
+}
+
 .nav-links {
     display: flex;
     list-style: none;
@@ -132,6 +136,7 @@
 
 .nav-link-text {
     color: black;
+    font-size: 26px;
 }
 
 .site-title {
@@ -168,6 +173,8 @@ footer {
     display: flex;
     justify-content: space-around;
     list-style: none;
+    max-width: 1000px;
+    margin: auto;
 }
 
 .icon-wrapper {

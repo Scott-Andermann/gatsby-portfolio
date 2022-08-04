@@ -10,7 +10,7 @@
 
 .hobby-header {
     background-color: #3B945E;
-    width: 80%;
+    width: 1000px;
     padding-top: 1rem;
     padding-bottom: 2rem;
     height: 4rem;
@@ -18,6 +18,12 @@
     border-radius: 10px;
     margin-bottom: 4rem;
     box-shadow: 2px 2px 2px #57BA98
+}
+
+@media only screen and (max-width: 1000px) {
+    .hobby-header {
+        width: 100%;
+    }
 }
 
 .hobby-header-text {
@@ -38,6 +44,7 @@ h2 .hobby-header {
     position: relative;
     display: flex;
     justify-content: center;
+    cursor: pointer;
 }
 
 .hobby-container {

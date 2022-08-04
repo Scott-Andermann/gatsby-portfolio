@@ -16,7 +16,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 90%;
+    max-width: 1000px;
     margin: auto;
     margin-top: 20px;
 }
@@ -35,6 +35,7 @@ h2 {
 .job-header {
     text-align: center;
     color: #182628;
+    font-weight: bold;
 }
 
 .job-image {

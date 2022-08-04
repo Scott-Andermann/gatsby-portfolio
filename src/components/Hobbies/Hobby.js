@@ -3,7 +3,8 @@ import gitHubWhite from '../../images/githubwhite.png';
 import flappyBird from '../../images/flappybird2.gif';
 import warranty from '../../images/warranty.png';
 import powerMeter from '../../images/powermeter.jpg';
-import weather from '../../images/weather.png'
+import weather from '../../images/weather.png';
+import sentiment from '../../images/sentiment.png';
 
 
 const Hobby = (props) => {
@@ -18,20 +19,26 @@ const Hobby = (props) => {
                 return weather;
             case 'warranty':
                 return warranty;
+            case 'sentiment':
+                return sentiment;
         }
     }
 
+    function handleClick() {
+        console.log('click');
+        window.open(props.github);
+    }
+
     return (
-        <div className={`hobby ${props.name}`} >
+        <div className={`hobby ${props.name}`} onClick={handleClick} >
             <img className='hobby-image' alt='hobby image' src={src(props.src)} />
-            <div className='hobby-overlay'>
+            <div className='hobby-overlay' onClick={handleClick}>
                 <h2 className='hobby-text'>{props.name}</h2>
                 <p className='hobby-text'>{props.description}</p>
                 <h4 className='hobby-text'>Tools used:</h4>
                 <ul className='hobby-tools'>
                     {props.tools.map(element => <li className='hobby-tools-item'>{element}</li>)}
                 </ul>
-                <a href={props.github} className='icon'><img className='icon' src={gitHubWhite} /> GitHub</a>
             </div>
         </div>
     )

@@ -35,9 +35,6 @@ const Layout = ({ pageTitle, children }) => {
     return (
         <div className={container}>
             <title>{pageTitle} | {data.site.siteMetadata.title}</title>
-            <div>
-                <header className='site-title'>{data.site.siteMetadata.title}</header>
-            </div>
             {/* Need to move contact form to new component since it could be used in places other than Layout */}
             <div className={`contact-form-container`} style={isShowing ? {
                 height: '100%',
@@ -69,10 +66,7 @@ const Layout = ({ pageTitle, children }) => {
             </div>
             <nav>
                 <ul className='nav-links'>
-                    <li className='nav-link-item'><Link to='/' className='nav-link-text'>Home</Link></li>
-                    <li className='nav-link-item'><Link to='/about' className='nav-link-text'>About</Link></li>
-                    <li className='nav-link-item' onClick={contactForm}>Contact</li>
-
+                    <li className='nav-link-item' onClick={contactForm}><Link to='/' className='nav-link-text'>Contact Me</Link></li>
                 </ul>
             </nav>
 
@@ -82,7 +76,6 @@ const Layout = ({ pageTitle, children }) => {
                 {children}
             </main>
             <footer>
-
                 <ul className='contact-list'>
                     <li className='icon-wrapper'><h2>Hit me up:</h2></li>
                     <li className='icon-wrapper'><a className='contact-text' href='#'><img className='contact-icon' src={email} /> ScottAndermann@gmail.com</a></li>

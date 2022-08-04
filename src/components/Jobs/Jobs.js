@@ -42,7 +42,6 @@ const Jobs = () => {
             <h2 className='job-header'>Previous Work Experience</h2>
             <p className='job-header'>Here is a quick overview of my professional career.  Interested in details? Please reach out!</p>
             <div className='jobs'>
-                <br></br>
                 {jobData.map(element => (
                     <Job src={element.src} title={element.title} name={element.name} description={element.description} website={element.website}/>))}
             </div>
