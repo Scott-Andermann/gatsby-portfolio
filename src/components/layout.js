@@ -51,9 +51,12 @@ const Layout = ({ pageTitle, children }) => {
                 {children}
             </main>
             <footer>
-                <div className='footer-contact-block' onClick={contactForm}>
+                <div className='footer-contact-block' >
                     <h2>Want to collaborate?</h2>
-                    <h3>Contact Me</h3>
+                    <div className='footer-contact-button' onClick={contactForm}>
+                        <h3 className='contact-me'>Contact Me</h3>
+                    </div>
+
                 </div>
 
                 <ul className='contact-list'>

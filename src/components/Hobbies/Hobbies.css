@@ -1,3 +1,12 @@
+.hobby-bg {
+    background-color: #4C323B;
+    padding-top: 8rem;
+}
+
+.top-hobbies {
+    padding-bottom: 4rem;
+}
+
 .hobby-image {
     height: 400px;
     max-width: 450px;

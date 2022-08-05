@@ -4,13 +4,12 @@
 }
 
 .job-container {
-
-    padding-bottom: 12rem;
+    padding-bottom: 4rem;
 }
 
 .job-header {
-    background-color: #00AD85;
-    box-shadow: 3px 3px 3px #FF6639
+    background-color: #4C323B;
+    box-shadow: 3px 3px 3px #D98FA9
 }
 
 h2 {
@@ -36,7 +35,11 @@ h2 {
     margin: 0 50px;
     margin-bottom: 50px;
     border-radius: 10px;
-    box-shadow: 3px 3px 3px #FF6639;
+    box-shadow: 3px 3px 3px #D98FA9;
+}
+
+.husky {
+    margin-bottom: 0;
 }
 
 .job-header-text {
@@ -61,7 +64,7 @@ h2 {
     width: 100%;
     height: 100%;
     opacity: 0;
-    background-color: #00AD85;
+    background-color: #4C323B;
     border-radius: 10px;
     transition: opacity .7s ease;
     color: #F2F2F2;
@@ -79,7 +82,7 @@ h2 {
     align-items: center;
     justify-content: center;
     margin: 5px auto;
-    border: 2px solid #4BFAD1;
+    border: 2px solid #D98FA9;
     border-radius: 20px;
     vertical-align: middle;
     transition: background-color color 0.25s;
@@ -92,7 +95,7 @@ h2 {
 }
 
 .link:hover {
-    background-color: #65CCB8;
+    background-color: #FFA5C7;
 }
 
 .link:active {
