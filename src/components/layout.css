@@ -3,6 +3,11 @@
     font-family: sans-serif;
 }
 
+h3 {
+    color: #F2F2F2;
+    margin-bottom: 10px;
+}
+
 .contact-form-container {
     position: fixed;
     display: flex;
@@ -175,6 +180,7 @@ footer {
     list-style: none;
     max-width: 1000px;
     margin: auto;
+    padding-inline-start: 0px;
 }
 
 .icon-wrapper {
@@ -188,9 +194,32 @@ footer {
     text-decoration: none;
 }
 
+.contact-text {
+    color: #f2f2f2
+}
+
 .contact-icon {
     height: 25px;
     margin-right: 5px;
+}
+
+.footer-contact-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem auto;
+    padding: 1rem 0;
+    max-width: 1000px;
+    background-color: #3B945E;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #57BA98;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+}
+
+.footer-contact-block:hover {
+    background-color: #57BA98;
+    transition: background-color 0.25s ease;
 }
 
 @media only screen and (max-width: 600px) {

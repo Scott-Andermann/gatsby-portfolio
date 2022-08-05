@@ -13,7 +13,7 @@ const Code = () => {
                     <div className='icon-container'>
                         <img className='skill-icon' alt='Develop icon' src={develop} />
                     </div>
-                    <h3>Develop</h3>
+                    <h3>Developer</h3>
                     <p>I like to bring ideas to life</p>
                     <h4>Languages I speak:</h4>
                     <ul className='skills'>
@@ -33,24 +33,25 @@ const Code = () => {
                     <p>Experienced in new product development</p>
                     <h4>Tools I have used:</h4>
                     <ul className='skills'>
-                        <li>Skill here</li>
-                        <li>Statistical Analysis</li>
-                        <li>Skill here</li>
-                        <li>Various CAD systems</li>
                         <li>MS Excel</li>
+                        <li>Statistical analysis</li>
+                        <li>Flowcharts</li>
+                        <li>FMEA</li>
+                        <li>Various CAD systems</li>
                     </ul>
                 </div>
                 <div className='column last'>
                     <div className='icon-container'>
                         <img className='skill-icon' alt='Product icon' src={product} />
                     </div>
-                    <h3>Product</h3>
+                    <h3>Product Manager</h3>
                     <p>Adept at gaining understanding from users</p>
                     <h4>Skills I have gained:</h4>
                     <ul className='skills'>
                         <li>Customer relations</li>
                         <li>Building buisness cases</li>
                         <li>Market analysis</li>
+                        <li>Project management</li>
                         <li>Quality control</li>
                     </ul>
                 </div>

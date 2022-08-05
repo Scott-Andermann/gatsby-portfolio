@@ -53,8 +53,13 @@ const Layout = ({ pageTitle, children }) => {
                 {children}
             </main>
             <footer>
+                <div className='footer-contact-block' onClick={contactForm}>
+                    <h2>Want to collaborate?</h2>
+                    <h3>Contact Me</h3>
+                </div>
+
                 <ul className='contact-list'>
-                    <li className='icon-wrapper'><h2>Hit me up:</h2></li>
+                    <li className='icon-wrapper'><h3 className='contact-text'>Hit me up:</h3></li>
                     <li className='icon-wrapper'><a className='contact-text' href='#'><img className='contact-icon' src={email} /> ScottAndermann@gmail.com</a></li>
                     <li className='icon-wrapper phone'><img className='contact-icon' src={phone} /> 630.863.5072</li>
                     <li className='icon-wrapper'><a href='https://github.com/Scott-Andermann'><img className='contact-icon' src={github} /> Scott-Andermann</a></li>
