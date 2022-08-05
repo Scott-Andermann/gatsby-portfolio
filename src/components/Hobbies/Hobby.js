@@ -25,7 +25,6 @@ const Hobby = (props) => {
     }
 
     function handleClick() {
-        console.log('click');
         window.open(props.github);
     }
 

@@ -16,14 +16,19 @@ const Job = (props) => {
         }
     }
 
+
+    function handleClick() {
+        window.open(props.website);
+    }
+
     return (
         <div className={`job ${props.name}`} >
             <img className='job-image' alt='job image' src={src(props.src)} />
             <div className='overlay'>
                 <h2>{props.title}</h2>
                 <p>{props.description}</p>
-                <div className='link'>
-                    <a href={props.website} target='_blank'>Visit Website</a>
+                <div className='link' onClick={handleClick}>
+                    <p>Visit Website</p>
                 </div>
 
             </div>

@@ -40,7 +40,7 @@ const Layout = ({ pageTitle, children }) => {
         <div className={container}>
             <title>{pageTitle} | {data.site.siteMetadata.title}</title>
             {/* Need to move contact form to new component since it could be used in places other than Layout */}
-            <ContactForm isShowing={isShowing} exitButton={exitButton} closeForm={closeForm}/>
+            <ContactForm isShowing={isShowing} exitButton={exitButton} closeForm={closeForm} />
             <nav>
                 <ul className='nav-links'>
                     <li className='nav-link-item' onClick={contactForm}><Link to='/' className='nav-link-text'>Contact Me</Link></li>
@@ -48,8 +48,6 @@ const Layout = ({ pageTitle, children }) => {
             </nav>
 
             <main>
-                <h1 className='heading'>{pageTitle}</h1>
-                {pageTitle==='Hello there!' ? <h2 className='heading2'>I love building new things and fixing old things</h2>: ''}
                 {children}
             </main>
             <footer>
@@ -60,7 +58,7 @@ const Layout = ({ pageTitle, children }) => {
 
                 <ul className='contact-list'>
                     <li className='icon-wrapper'><h3 className='contact-text'>Hit me up:</h3></li>
-                    <li className='icon-wrapper'><a className='contact-text' href='#'><img className='contact-icon' src={email} /> ScottAndermann@gmail.com</a></li>
+                    <li className='icon-wrapper email' onClick={contactForm}><img className='contact-icon' src={email} /> ScottAndermann@gmail.com</li>
                     <li className='icon-wrapper phone'><img className='contact-icon' src={phone} /> 630.863.5072</li>
                     <li className='icon-wrapper'><a href='https://github.com/Scott-Andermann'><img className='contact-icon' src={github} /> Scott-Andermann</a></li>
                     <li className='icon-wrapper'><a href='https://www.linkedin.com/in/scott-andermann'><img className='contact-icon' src={linkedin} /> ScottAndermann</a></li>

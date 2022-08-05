@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Hobby from './Hobby';
+import { motion } from 'framer-motion';
 import './Hobbies.css';
 
 const Hobbies = () => {
@@ -42,20 +43,25 @@ const Hobbies = () => {
     ]
 
     return (
-        <div className='top-hobbies'>
-            <div className='hobby-header'>
-                <h2 className='hobby-header-text'>Extracurriculars</h2>
-                <p className='hobby-header-text'>I spend my free time tinkering on all kinds of projects</p>
-            </div>
-            <div className='hobby-container'>
-                {hobbyData.map(element => <Hobby name={element.name}
-                    src={element.src}
-                    description={element.description}
-                    tools={element.tools}
-                    github={element.github} />
-                )}
-            </div>
+        <div className='hobbies-bg'>
+            <motion.div initial={{ opacity: 0, scale: 0.5 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 1 }}
+                className='top-hobbies'>
+                <div className='header-container hobby-header'>
+                    <h2 className='hobby-header-text'>Extracurriculars</h2>
+                    <p className='hobby-header-text'>I spend my free time tinkering on all kinds of projects</p>
+                </div>
+                <div className='hobby-container'>
+                    {hobbyData.map(element => <Hobby name={element.name}
+                        src={element.src}
+                        description={element.description}
+                        tools={element.tools}
+                        github={element.github} />
+                    )}
+                </div>
 
+            </motion.div>
         </div>
     )
 }

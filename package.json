@@ -17,6 +17,7 @@
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
     "emailjs": "^4.0.0",
+    "framer-motion": "^7.0.0",
     "gatsby": "^4.19.2",
     "gatsby-plugin-image": "^2.19.0",
     "gatsby-plugin-manifest": "^4.20.0",

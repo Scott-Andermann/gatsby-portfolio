@@ -8,109 +8,8 @@ h3 {
     margin-bottom: 10px;
 }
 
-.contact-form-container {
-    position: fixed;
-    display: flex;
-    z-index: 10000;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 0;
-    margin-block-end: 0;
-    margin-block-start: 0;
-    opacity: 0;
-    background: rgb(0,0,0);
-    transition: height opacity 0.5s
-}
-
-.contact-form {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 600px;
-    width: 500px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    border: 2px solid #F2F2F2;
-    padding: 25px;
-    box-sizing: border-box;
-}
-
-@media only screen and (max-width: 500px) {
-    .contact-form {
-        width: 90%;
-    }
-}
-
-.contact-form-input {
-    width: 100%;
-    padding: 0;
-    font-size: 16px;
-    height: 30px;
-    font-weight: 600;
-    background-color: transparent;
-    border: 2px solid #F2F2F2;
-    transition: 1s cubic-bezier(.075,.82,.165,1);
-    color: #F2F2F2;
-}
-
-.textarea {
-    height: 200px;
-}
-
-.contact-label {
-    color: #F2F2F2;
-}
-
-.submit {
-    height: 40px;
-    background-color: transparent;
-    border: 2px solid #F2F2F2;
-    font-size: 20px;
-    font-weight: 600;
-    color: #F2F2F2;
-}
-
-.submit:hover {
-    background-color: #57BA98;
-}
-
-.exit-button {
-    position: absolute;
-    top: 3px;
-    right: 3px;
-    height: 30px;
-    width: 30px;
-    text-align: center;
-    border-radius: 10px;
-    border: none;
-    background-color: #3B945E;
-    box-shadow: 2px 2px 2px #57BA98
-}
-
-.exit-button:active {
-    transform: scale(0.95);
-    box-shadow: 1px 1px 1px #57BA98;
-}
-
 .text {
     color: #F2F2F2;
-}
-
-.heading {
-    text-align: center;
-    font-size: 3rem;
-    color: #3B945E;
-}
-
-.heading2 {
-    text-align: center;
-    color: #182628;
-    margin-bottom: 4rem;
 }
 
 nav {
@@ -135,12 +34,16 @@ nav {
 }
 
 .nav-link-item:hover {
-    background-color: #57BA98;
+    background-color: #FA5E2A;
+}
 
+.nav-link-item:active {
+    box-shadow: inset 0 0 10px #062230;
 }
 
 .nav-link-text {
-    color: black;
+    color: #f2f2f2;
+    font-weight: bold;
     font-size: 26px;
 }
 
@@ -155,7 +58,7 @@ nav {
 }
 
 footer {
-    background-color: #182628;
+    background-color: #062230;
     padding: 2rem;
 }
 
@@ -194,6 +97,13 @@ footer {
     text-decoration: none;
 }
 
+.email {
+    font-size: 20px;
+    color: #F2F2F2;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .contact-text {
     color: #f2f2f2
 }
@@ -210,17 +120,24 @@ footer {
     margin: 2rem auto;
     padding: 1rem 0;
     max-width: 1000px;
-    background-color: #3B945E;
+    background-color: rgba(173,52,12,1);
     border-radius: 10px;
-    box-shadow: 2px 2px 2px #57BA98;
+    box-shadow: 3px 3px 3px #FF6639;
     cursor: pointer;
-    transition: background-color 0.25s ease;
+    transition: background-color 0.25s ease, box-shadow 0.25s ease;
 }
 
 .footer-contact-block:hover {
-    background-color: #57BA98;
-    transition: background-color 0.25s ease;
+    background-color: #FF6639;
+    box-shadow: 3px 3px 3px #00AD85;
+    transition: background-color 0.25s ease, box-shadow 0.25s ease;
 }
+
+.footer-contact-block:active {
+    background-color: #FF6639;
+    box-shadow: inset 0 0 20px #062230;
+}
+
 
 @media only screen and (max-width: 600px) {
     .site-title {

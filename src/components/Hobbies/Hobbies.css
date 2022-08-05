@@ -1,16 +1,10 @@
-.top-hobbies {
-    padding-top: 5rem;
-    margin-top: -9rem;
-}
-
 .hobby-image {
     height: 400px;
     max-width: 450px;
     border-radius: 10px;
 }
 
-.hobby-header {
-    background-color: #3B945E;
+.header-container {
     width: 1000px;
     padding-top: 1rem;
     padding-bottom: 2rem;
@@ -18,11 +12,17 @@
     margin: auto;
     border-radius: 10px;
     margin-bottom: 4rem;
-    box-shadow: 2px 2px 2px #57BA98
+    margin-top: -4rem;
+    position:relative;
+}
+
+.hobby-header {
+    background-color: rgba(173,52,12,1);
+    box-shadow: 3px 3px 3px #062230
 }
 
 @media only screen and (max-width: 1000px) {
-    .hobby-header {
+    .header-container {
         width: 100%;
     }
 }
@@ -31,10 +31,8 @@
     text-align: center;
     margin-block-start: 0;
     margin-top: 10px;
-}
-
-h2 .hobby-header {
-    color:#3B945E
+    color: #f2f2f2;
+    font-weight: bold
 }
 
 .hobby {
@@ -47,7 +45,7 @@ h2 .hobby-header {
     justify-content: center;
     cursor: pointer;
     border-radius: 10px;
-    box-shadow: 1px 1px 1px #182628;
+    box-shadow: 3px 3px 3px #062230;
     box-sizing: border-box;
 }
 
@@ -75,21 +73,30 @@ h2 .hobby-header {
     width: 100%;
     opacity: 0;
     border-radius: 10px;
-    transition: opacity .5s linear;
+    transition: opacity .5s ease, box-shadow 0.5s ease, background-color 0.5s ease;
+    box-sizing: border-box;
+    padding: 60px 30px;
 }
 
 .hobby-overlay:hover {
     opacity: .9;
-    box-shadow: 3px 3px 3px #3B945E;
+    box-shadow: 3px 3px 3px #FF6639;
     background-color: #182628;
+}
+
+.hobby-overlay:active {
+    box-shadow: inset 0 0 100px #FF6639
 }
 
 .hobby-tools {
     list-style: none;
     padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 .hobby-tools-item {
     color: #f2f2f2;
+    text-align: center;
 }
 
 .hobby-text {

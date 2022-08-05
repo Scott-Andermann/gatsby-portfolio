@@ -1,11 +1,14 @@
-.top-code {
-    margin-top: -17rem;
-    padding-top: 19rem;
-    padding-bottom: 7rem;
-    background-color: #57BA98;
+.code-bg {
+    background-image: linear-gradient(180deg, rgba(6,34,48,1) 0%, rgba(173,52,12,1) 100%);
+    position: relative;
 }
 
-
+.top-code {
+    padding-top: 4rem;
+    max-height: 1800px;
+    padding-bottom: 10rem;
+    position:relative;
+}
 
 .code {
     display: flex;
@@ -15,12 +18,12 @@
     max-width: 999px;
     border: 2px solid rgb(216, 216, 216);
     border-radius: 10px;
-    box-shadow: 3px 3px 3px #3B945E;
+    box-shadow: 3px 3px 3px #FF6639;
     background-color: #F2F2F2
 }
 
 h4 {
-    color: #3B945E;
+    color: #0CAD88;
 }
 
 .column {
@@ -58,7 +61,7 @@ h4 {
     height: 100px;
     width: 100px;
     margin: auto;
-    background-color: #65ccb8;
+    background-color: #00AD85;
     border-radius: 50%
 }
 
