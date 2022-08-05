@@ -8,6 +8,7 @@ import github from '../images/github65ccb8.png';
 import email from '../images/email.png';
 import phone from '../images/phone.png';
 import linkedin from '../images/linkedin.png';
+import ContactForm from './ContactForm/ContactForm';
 import './layout.css';
 
 const Layout = ({ pageTitle, children }) => {
@@ -22,10 +23,13 @@ const Layout = ({ pageTitle, children }) => {
         }
     }`)
 
-    const isHidden = (element) => element.classList.contains('show');
-
     function contactForm() {
         setIsShowing(true);
+    }
+
+    function exitButton(e) {
+        e.preventDefault();
+        setIsShowing(false);
     }
 
     function closeForm() {
@@ -36,34 +40,7 @@ const Layout = ({ pageTitle, children }) => {
         <div className={container}>
             <title>{pageTitle} | {data.site.siteMetadata.title}</title>
             {/* Need to move contact form to new component since it could be used in places other than Layout */}
-            <div className={`contact-form-container`} style={isShowing ? {
-                height: '100%',
-                opacity: 0.9,
-                transition: 'height 0s linear, opacity 0.5s linear'
-            } : {
-                height: '0%',
-                opacity: 0,
-                pointerEvents: 'none',
-                transition: 'height 0s linear 0.5s, opacity 0.5s linear'
-            }}>
-                
-                <form className='contact-form'>
-                    <button className='exit-button' onClick={closeForm}>X</button>
-                    <label className='contact-label'>
-                        Name
-                        <input className='contact-form-input' type='text' name='name' />
-                    </label>
-                    <label className='contact-label'>
-                        Email
-                        <input className='contact-form-input' type='text' name='email' />
-                    </label>
-                    <label className='contact-label'>
-                        Message
-                        <textarea className='contact-form-input textarea' type='text' name='message' />
-                    </label>
-                    <input className='submit' type='submit' value='Send' />
-                </form>
-            </div>
+            <ContactForm isShowing={isShowing} exitButton={exitButton} closeForm={closeForm}/>
             <nav>
                 <ul className='nav-links'>
                     <li className='nav-link-item' onClick={contactForm}><Link to='/' className='nav-link-text'>Contact Me</Link></li>

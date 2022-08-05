@@ -2,7 +2,7 @@ import * as React from 'react';
 import Hobby from './Hobby';
 import './Hobbies.css';
 
-const Hobbies = (props) => {
+const Hobbies = () => {
     const hobbyData = [
         {
             name: 'Cycling power meter',
@@ -40,8 +40,6 @@ const Hobbies = (props) => {
             github: 'https://github.com/Scott-Andermann/shopify-warranty'
         }
     ]
-
-    console.log(props);
 
     return (
         <div className='top-hobbies'>

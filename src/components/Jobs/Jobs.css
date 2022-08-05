@@ -16,17 +16,17 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: auto;
     margin-top: 20px;
 }
 
 .job {
     position: relative;
-    height: 300px;
-    /* width: 267px; */
+    /* height: 300px; */
+    width: 450px;
     text-align: center;
-    margin: 0 20px;
+    margin: 0 50px;
     margin-bottom: 50px;
     border-radius: 10px;
     box-shadow: 3px 3px 3px #182628;
@@ -92,6 +92,8 @@ a {
     .job {
         width: 100%;
         height: auto;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
 }

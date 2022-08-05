@@ -23,7 +23,7 @@ const Job = (props) => {
                 <h2>{props.title}</h2>
                 <p>{props.description}</p>
                 <div className='link'>
-                    <a href={props.website}>Visit Website</a>
+                    <a href={props.website} target='_blank'>Visit Website</a>
                 </div>
 
             </div>

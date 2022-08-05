@@ -5,7 +5,8 @@
 
 .hobby-image {
     height: 400px;
-    max-width: 600px;
+    max-width: 450px;
+    border-radius: 10px;
 }
 
 .hobby-header {
@@ -37,29 +38,29 @@ h2 .hobby-header {
 }
 
 .hobby {
-    width: 600px;
+    width: 450px;
     height: 400px;
-    margin-right: 50px;
+    margin: 0 50px;
     margin-bottom: 50px;
     position: relative;
     display: flex;
     justify-content: center;
     cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px #182628;
+    box-sizing: border-box;
+}
+
+.hobby:hover {
+    box-shadow: none;
 }
 
 .hobby-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-@media only screen and (max-width: 1350px) {
-    .hobby-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-
+    max-width: 1100px;
+    margin:auto;
 }
 
 .hobby-overlay {
