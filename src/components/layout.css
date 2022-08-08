@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 .container {
     margin: auto;
     font-family: sans-serif;
@@ -27,14 +31,17 @@ nav {
 
 .nav-link-item {
     padding: 1rem;
-    margin-right: 1rem;
-    border-radius: 1.5rem;
+    border-radius: 33px;
     font-size: 20px;
-    transition: background-color 0.3s ease;
+    background-color: rgba(173,52,12,1);
+    border: 2px solid white;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
 .nav-link-item:hover {
-    background-color: #FA5E2A;
+    box-shadow: 2px 2px 2px #00AD85;
+    background-color: #FF6639;
 }
 
 .nav-link-item:active {
@@ -132,7 +139,7 @@ footer {
 .footer-contact-button {
     padding: .75rem;
     border-radius: 2rem;
-    border: 2px solid black;
+    border: 2px solid white;
     font-size: 18px;
     background-color: rgba(173,52,12,1);
     transition: background-color 0.3s ease;
@@ -156,20 +163,6 @@ footer {
     box-shadow: inset 0 0 20px #062230;
 }
 
-
-@media only screen and (max-width: 600px) {
-    .site-title {
-        font-weight: 700;
-        text-align: center;
-        margin-right: 0px;
-    }
-    .nav-links {
-        justify-content: center;
-        margin-right: 0;
-    }
-
-}
-
 @media only screen and (max-width: 1200px) {
     footer {
         padding-left: 10px;
@@ -186,3 +179,21 @@ footer {
         margin: 10px auto;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .site-title {
+        font-weight: 700;
+        text-align: center;
+        margin-right: 0px;
+    }
+    .nav-links {
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    footer {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
