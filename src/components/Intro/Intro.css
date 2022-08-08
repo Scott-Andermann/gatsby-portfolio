@@ -30,6 +30,17 @@
     color: #f2f2f2;
 }
 
+.main-heading-container {
+    display: flex;
+    justify-content: left;
+    width: 262.79px;
+    margin: auto;
+}
+
+.letter {
+    min-width: 12px;
+}
+
 .heading-2 {
     text-align: center;
     color: #f2f2f2;

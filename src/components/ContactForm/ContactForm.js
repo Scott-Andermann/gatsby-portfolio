@@ -30,7 +30,7 @@ function ContactForm({ isShowing, closeForm, exitButton }) {
         if (message.length > 6) {
             return (true)
         }
-        alert('Please leave me a message why you would like to connect!')
+        alert('Please leave me a little longer message why you would like to connect!')
         return false;
     }
 
