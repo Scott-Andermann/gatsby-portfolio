@@ -52,7 +52,7 @@ const Layout = ({ pageTitle, children }) => {
             </main>
             <footer>
                 <div className='footer-contact-block' >
-                    <h2>Want to collaborate?</h2>
+                    <h2 className='footer-text'>Want to collaborate?</h2>
                     <div className='footer-contact-button' onClick={contactForm}>
                         <h3 className='contact-me'>Contact Me</h3>
                     </div>

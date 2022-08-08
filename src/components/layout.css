@@ -195,5 +195,13 @@ footer {
         padding-left: 0px;
         padding-right: 0px;
     }
+
+    .footer-text {
+        font-size: 20px;
+    }
+
+    .contact-me {
+        font-size: 16px;
+    }
 }
 
