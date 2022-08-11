@@ -12,7 +12,15 @@
   align-items: center;
 }
 .intro-container {
-  max-width: 60%;
+  max-width: 40%;
+}
+@media only screen and (max-width: 985px) {
+	.intro {
+		padding: 25px;
+	}
+  .intro-container {
+    max-width: 100%;
+  }
 }
 
 .intro-text {
@@ -25,7 +33,7 @@
 }
 .text-highlight:first-of-type {
   color: #ff6639;
-	font-weight: bold;
+  font-weight: bold;
 }
 .main-heading {
   font-size: 1.4rem;
