@@ -3,25 +3,49 @@ import './Intro.css';
 import { motion } from 'framer-motion';
 import MainHeading from './MainHeading';
 
-
 const Intro = () => {
-    return (
-        <div className='intro'>
-            {/* <MainHeading text='Hello there!' /> */}
-            <motion.div
-                initial={{ opacity: 0, scale: 0.5 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 1 }}>
-                <h1 className='main-heading'>Hello there!</h1>
-                <h2 className='heading-2'>I love building new things and fixing old things</h2>
-                <p className='intro-text'>Hi, my name is Scott Andermann and I took the scenic to web development. I spent the early part of my career designing off road vehicles.
-                From there I completed my MBA and transistioned into a Product Manager role for consumer goods.  I bring an endless curiosity to any new challenge
-                and won't hesitate to jump into the unknown to find the solution to a problem.</p>
-            </motion.div>
-
-
-        </div>
-    )
-}
+  return (
+    <div className="intro">
+      <motion.div transition={{ staggerChildren: 0.5 }} className="intro-container">
+        {/* <MainHeading text='Hello there!' /> */}
+        <motion.h1
+          initial={{ opacity: 0, x: -100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+          className="main-heading"
+        >
+          Hi, my name is
+        </motion.h1>
+        <motion.h2
+          initial={{ opacity: 0, x: -100 }}
+          animate={{ opacity: 1, x: 0 }}
+          className="heading-2"
+          transition={{ duration: 0.5, delay: 0.5 }}
+        >
+          Scott Andermann.
+        </motion.h2>
+        <motion.h2
+          initial={{ opacity: 0, x: -100 }}
+          animate={{ opacity: 1, x: 0 }}
+          className="heading-2 sub-heading"
+          transition={{ duration: 0.5, delay: 1 }}
+        >
+          I love building new things on the web, and fixing old things in the real world.
+        </motion.h2>
+        <motion.p
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 1.5 }}
+          className="intro-text"
+        >
+          I'm a <span className="text-highlight">Software Engineer</span> specializing in modern
+          technologies like Javascript and Python, with years of experience as a{' '}
+          <span className="text-highlight">Product Manager</span> and{' '}
+          <span className="text-highlight">Mechanical Engineer</span>.
+        </motion.p>
+      </motion.div>
+    </div>
+  );
+};
 
 export default Intro;

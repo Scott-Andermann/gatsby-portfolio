@@ -1,207 +1,202 @@
 body {
-    margin: 0;
+  background-color: #062230;
+  margin: 0;
 }
 
 .container {
-    margin: auto;
-    font-family: sans-serif;
+  margin: auto;
+  font-family: sans-serif;
 }
 
 h3 {
-    color: #F2F2F2;
-    margin-bottom: 10px;
+  color: #f2f2f2;
+  margin-bottom: 10px;
 }
 
 .text {
-    color: #F2F2F2;
+  color: #f2f2f2;
 }
 
 nav {
-    margin-top: 40px;
+  margin-top: 40px;
+  position: fixed;
+  top: 0;
+  right: 0;
 }
 
 .nav-links {
-    display: flex;
-    list-style: none;
-    justify-content: right;
-    padding-left: 0;
-    margin-right: 150px;
-
+  display: flex;
+  list-style: none;
+  justify-content: right;
+  padding-left: 0;
+  margin-right: 150px;
 }
 
 .nav-link-item {
-    padding: 1rem;
-    border-radius: 33px;
-    font-size: 20px;
-    background-color: rgba(173,52,12,1);
-    border: 2px solid white;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-}
-
-.nav-link-item:hover {
-    box-shadow: 2px 2px 2px #00AD85;
-    background-color: #FF6639;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 20px;
+  border: 2px solid #ff6639;
+  cursor: pointer;
+  color: #ff6639;
 }
 
 .nav-link-item:active {
-    box-shadow: inset 0 0 10px #062230;
+  box-shadow: inset 0 0 10px #062230;
 }
 
 .nav-link-text {
-    color: #f2f2f2;
-    font-weight: bold;
-    font-size: 26px;
+  color: #ff6639;
+  font-weight: bold;
+  font-size: 2.2rem;
 }
 
 .site-title {
-    font-size: 3rem;
-    color: #182628;
-    font-weight: 700;
-    margin: 3rem 0;
-    margin-bottom: 1rem;
-    text-align: right;
-    margin-right: 100px;
+  font-size: 3rem;
+  color: #182628;
+  font-weight: 700;
+  margin: 3rem 0;
+  margin-bottom: 1rem;
+  text-align: right;
+  margin-right: 100px;
 }
 
 footer {
-    background-color: #062230;
-    padding: 2rem;
+  padding: 2rem;
 }
 
 .contact-list {
-    display: flex;
-    list-style: none;
+  display: flex;
+  list-style: none;
 }
 
 .icon-wrapper {
-    list-style: none;
+  list-style: none;
 }
 
 .phone {
-    font-size: 20px;
-    color: #F2F2F2;
-    text-decoration: none;
+  font-size: 20px;
+  color: #f2f2f2;
+  text-decoration: none;
 }
 
 .contact-list {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    max-width: 1000px;
-    margin: auto;
-    padding-inline-start: 0px;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  max-width: 1000px;
+  margin: auto;
+  padding-inline-start: 0px;
 }
 
 .icon-wrapper {
-    list-style: none;
-    margin: auto;
+  list-style: none;
+  margin: auto;
 }
 
 .phone {
-    font-size: 20px;
-    color: #F2F2F2;
-    text-decoration: none;
+  font-size: 20px;
+  color: #f2f2f2;
+  text-decoration: none;
 }
 
 .email {
-    font-size: 20px;
-    color: #F2F2F2;
-    text-decoration: none;
-    cursor: pointer;
+  font-size: 20px;
+  color: #f2f2f2;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .contact-text {
-    color: #f2f2f2
+  color: #f2f2f2;
 }
 
 .contact-icon {
-    height: 25px;
-    margin-right: 5px;
+  height: 25px;
+  margin-right: 5px;
 }
 
 .footer-contact-block {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 2rem auto;
-    height: 6rem;
-    margin-top: -6rem;
-    padding: 1rem 0;
-    max-width: 1000px;
-    background-color: rgba(173,52,12,1);
-    border-radius: 10px;
-    box-shadow: 3px 3px 3px #FF6639;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem auto;
+  height: 6rem;
+  margin-top: -6rem;
+  padding: 1rem 0;
+  max-width: 1000px;
+  background-color: rgba(173, 52, 12, 1);
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px #ff6639;
 
-    transition: background-color 0.25s ease, box-shadow 0.25s ease;
+  transition: background-color 0.25s ease, box-shadow 0.25s ease;
 }
 
 .footer-contact-button {
-    padding: .75rem;
-    border-radius: 2rem;
-    border: 2px solid white;
-    font-size: 18px;
-    background-color: rgba(173,52,12,1);
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-    box-shadow: 3px 3px 3px #FF6639
+  padding: 0.75rem;
+  border-radius: 2rem;
+  border: 2px solid white;
+  font-size: 18px;
+  background-color: rgba(173, 52, 12, 1);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  box-shadow: 3px 3px 3px #ff6639;
 }
 
 .contact-me {
-    margin-block-end: 0;
-    margin-block-start: 0;
+  margin-block-end: 0;
+  margin-block-start: 0;
 }
 
 .footer-contact-button:hover {
-    background-color: #FF6639;
-    box-shadow: 3px 3px 3px #00AD85;
-    transition: background-color 0.25s ease, box-shadow 0.25s ease;
+  background-color: #ff6639;
+  box-shadow: 3px 3px 3px #00ad85;
+  transition: background-color 0.25s ease, box-shadow 0.25s ease;
 }
 
 .footer-contact-button:active {
-    background-color: #FF6639;
-    box-shadow: inset 0 0 20px #062230;
+  background-color: #ff6639;
+  box-shadow: inset 0 0 20px #062230;
 }
 
 @media only screen and (max-width: 1200px) {
-    footer {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    
-    .contact-list {
-        flex-direction: column;
-        padding-inline-start: 0;
-        width: 100%;
-    }
+  footer {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
-    .icon-wrapper {
-        margin: 10px auto;
-    }
+  .contact-list {
+    flex-direction: column;
+    padding-inline-start: 0;
+    width: 100%;
+  }
+
+  .icon-wrapper {
+    margin: 10px auto;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    .site-title {
-        font-weight: 700;
-        text-align: center;
-        margin-right: 0px;
-    }
-    .nav-links {
-        justify-content: center;
-        margin-right: 0;
-    }
+  .site-title {
+    font-weight: 700;
+    text-align: center;
+    margin-right: 0px;
+  }
+  .nav-links {
+    justify-content: center;
+    margin-right: 0;
+  }
 
-    footer {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
+  footer {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 
-    .footer-text {
-        font-size: 20px;
-    }
+  .footer-text {
+    font-size: 20px;
+  }
 
-    .contact-me {
-        font-size: 16px;
-    }
+  .contact-me {
+    font-size: 16px;
+  }
 }
-
