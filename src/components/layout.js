@@ -1,74 +1,60 @@
 import * as React from 'react';
 import { useState } from 'react';
 import { Link, useStaticQuery, graphql } from 'gatsby';
-import {
-    container
-} from './layout.module.css';
-import github from '../images/github65ccb8.png';
+import { container } from './layout.module.css';
 import email from '../images/email.png';
 import phone from '../images/phone.png';
-import linkedin from '../images/linkedin.png';
 import ContactForm from './ContactForm/ContactForm';
 import './layout.css';
+import Footer from './Footer';
 
 const Layout = ({ pageTitle, children }) => {
-    const [isShowing, setIsShowing] = useState(false);
+  const [isShowing, setIsShowing] = useState(false);
 
-    const data = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     query {
-        site {
-            siteMetadata {
-                title
-            }
+      site {
+        siteMetadata {
+          title
         }
-    }`)
-
-    function contactForm() {
-        setIsShowing(true);
+      }
     }
+  `);
 
-    function exitButton(e) {
-        e.preventDefault();
-        setIsShowing(false);
-    }
+  function contactForm() {
+    setIsShowing(true);
+  }
 
-    function closeForm() {
-        setIsShowing(false);
-    }
+  function exitButton(e) {
+    e.preventDefault();
+    setIsShowing(false);
+  }
 
-    return (
-        <div className={container}>
-            <title>{pageTitle} | {data.site.siteMetadata.title}</title>
-            {/* Need to move contact form to new component since it could be used in places other than Layout */}
-            <ContactForm isShowing={isShowing} exitButton={exitButton} closeForm={closeForm} />
-            <nav>
-                <ul className='nav-links'>
-                    <li className='nav-link-item' onClick={contactForm}><Link to='/' className='nav-link-text'>Contact Me</Link></li>
-                </ul>
-            </nav>
+  function closeForm() {
+    setIsShowing(false);
+  }
 
-            <main>
-                {children}
-            </main>
-            <footer>
-                <div className='footer-contact-block' >
-                    <h2 className='footer-text'>Want to collaborate?</h2>
-                    <div className='footer-contact-button' onClick={contactForm}>
-                        <h3 className='contact-me'>Contact Me</h3>
-                    </div>
+  return (
+    <div className={container}>
+      <title>
+        {pageTitle} | {data.site.siteMetadata.title}
+      </title>
+      {/* Need to move contact form to new component since it could be used in places other than Layout */}
+      <ContactForm isShowing={isShowing} exitButton={exitButton} closeForm={closeForm} />
+      <nav>
+        <ul className="nav-links">
+          <li className="nav-link-item" onClick={contactForm}>
+            <Link to="/" className="nav-link-text">
+              Contact Me
+            </Link>
+          </li>
+        </ul>
+      </nav>
 
-                </div>
-
-                <ul className='contact-list'>
-                    <li className='icon-wrapper'><h3 className='contact-text'>Hit me up:</h3></li>
-                    <li className='icon-wrapper email' onClick={contactForm}><img className='contact-icon' src={email} /> ScottAndermann@gmail.com</li>
-                    <li className='icon-wrapper phone'><img className='contact-icon' src={phone} /> 630.863.5072</li>
-                    <li className='icon-wrapper'><a href='https://github.com/Scott-Andermann'><img className='contact-icon' src={github} /> Scott-Andermann</a></li>
-                    <li className='icon-wrapper'><a href='https://www.linkedin.com/in/scott-andermann'><img className='contact-icon' src={linkedin} /> ScottAndermann</a></li>
-                </ul>
-            </footer>
-        </div>
-    )
-}
+      <main>{children}</main>
+      <Footer></Footer>
+    </div>
+  );
+};
 
 export default Layout;

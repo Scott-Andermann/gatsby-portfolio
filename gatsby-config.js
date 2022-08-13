@@ -4,6 +4,7 @@ module.exports = {
     title: "Scott Andermann"
   },
   plugins: [
+    'gatsby-plugin-styled-components',
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     {

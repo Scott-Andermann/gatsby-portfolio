@@ -1,6 +1,10 @@
+* {
+    box-sizing: border-box;
+}
 body {
-  background: rgb(6, 34, 48);
+  background: #062230;
   margin: 0;
+  
 }
 
 .container {
