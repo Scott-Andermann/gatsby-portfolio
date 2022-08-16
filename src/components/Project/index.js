@@ -28,7 +28,8 @@ const Project = ({ title, image, description, tags, githubLink }) => {
       Featured Project
       <StyledTitle>{title}</StyledTitle>
       <StyledDescriptionContainer>{description}</StyledDescriptionContainer>
-
+      <StyledTagsContainer>{tags}</StyledTagsContainer>
+      
     </StyledContainer>
   );
 };

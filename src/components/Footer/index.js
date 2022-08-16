@@ -9,6 +9,7 @@ const StyledContainer = styled.div`
   bottom: 0;
   left: 0;
   display: flex;
+  align-items: flex-end;
   justify-content: space-between;
   flex-wrap: nowrap;
   padding: 0 75px;

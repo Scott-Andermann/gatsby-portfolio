@@ -1,7 +1,9 @@
 import * as React from 'react';
 import './Intro.css';
 import { motion } from 'framer-motion';
-import MainHeading from './MainHeading';
+import styled from 'styled-components';
+
+
 
 const Intro = () => {
   return (
@@ -12,7 +14,7 @@ const Intro = () => {
           initial={{ opacity: 0, y: -100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="main-heading"
+          className="main-heading code-text"
         >
           Hi, my name is
         </motion.h1>
