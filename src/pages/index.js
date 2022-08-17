@@ -1,11 +1,11 @@
 import * as React from "react";
 import Layout from "../components/layout";
 import { graphql } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
 import Jobs from "../components/Jobs/Jobs";
 import Intro from "../components/Intro/Intro";
 import Code from "../components/Code/Code";
 import Hobbies from "../components/Hobbies/Hobbies";
+import '@fontsource/roboto';
 
 const IndexPage = ({data}) => {
 

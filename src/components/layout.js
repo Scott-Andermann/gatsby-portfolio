@@ -37,7 +37,7 @@ const Layout = ({ pageTitle, children }) => {
     }
 
     return (
-        <div className={container}>
+        <div className='background'>
             <title>{pageTitle} | {data.site.siteMetadata.title}</title>
             {/* Need to move contact form to new component since it could be used in places other than Layout */}
             <ContactForm isShowing={isShowing} exitButton={exitButton} closeForm={closeForm} />
@@ -46,12 +46,21 @@ const Layout = ({ pageTitle, children }) => {
                     <li className='nav-link-item' onClick={contactForm}><Link to='/' className='nav-link-text'>Contact Me</Link></li>
                 </ul>
             </nav>
+            <div className='contact-overlay'>
+                <div>
+                    <li className='icon-wrapper'><a href='https://github.com/Scott-Andermann'><img className='contact-icon' src={github} /></a></li>
+                    <li className='icon-wrapper'><a href='https://www.linkedin.com/in/scott-andermann'><img className='contact-icon' src={linkedin} /></a></li>
+                </div>
+                <div className='email-overlay'>
+                    <a href="mailto:scottandermann@gmail.com">ScottAndermann@gmail</a>
+                </div>
+            </div>
 
             <main>
                 {children}
             </main>
             <footer>
-                <div className='footer-contact-block' >
+                <div className='footer-contact-block header-container' >
                     <h2 className='footer-text'>Want to collaborate?</h2>
                     <div className='footer-contact-button' onClick={contactForm}>
                         <h3 className='contact-me'>Contact Me</h3>

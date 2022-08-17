@@ -1,18 +1,7 @@
-.code-bg {
-    background-image: linear-gradient(180deg, rgba(6,34,48,1) 0%, rgba(173,52,12,1) 100%);
-    position: relative;
-}
 
-.top-code {
-    padding-top: 4rem;
-    max-height: 1800px;
-    padding-bottom: 10rem;
-    position:relative;
-}
 
 .code {
     display: flex;
-    margin: auto;
     justify-content: center;
     max-height: 600px;
     max-width: 999px;
@@ -20,6 +9,12 @@
     border-radius: 10px;
     box-shadow: 3px 3px 3px #FF6639;
     background-color: #F2F2F2
+}
+
+.code-container {
+    display: flex;
+    justify-content: center;
+    margin: auto 85px;
 }
 
 h4 {
@@ -34,8 +29,15 @@ h4 {
     padding-right: 20px;
     width: 333px;
     text-align: center;
-
 }
+
+@media only screen and (min-width: 1170px) {
+    .code {
+        margin: auto;
+    }
+}
+
+
 
 .first {
     border-right: 1px solid rgb(216, 216, 216);
@@ -79,11 +81,13 @@ h4 {
     }
 }
 
+
 @media only screen and (max-width: 900px) {
     .code {
-        max-width: 450px;
+        width: 450px;
         flex-direction: column;
         max-height: 1800px;
+        margin: auto;
     }
 
     .column {
@@ -104,8 +108,21 @@ h4 {
 }
 
 @media only screen and (max-width: 500px) {
+    .code-container {
+        margin: auto;
+        width: 100%;
+    }
     .code {
         margin-left: 10px;
         margin-right: 10px;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1170) {
+
+    .column {
+        flex: 1 1 0;
+        width: auto;
     }
 }

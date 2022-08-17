@@ -3,22 +3,74 @@ import './Intro.css';
 import { motion } from 'framer-motion';
 import MainHeading from './MainHeading';
 
-
+//I love building new things on the web and fixing old things in the real world
+//I'm a software engineer specializing in modern technologies like Javascript and Python, with years of experience
+//as a mechanical engineer and produc manager
 const Intro = () => {
     return (
         <div className='intro'>
             {/* <MainHeading text='Hello there!' /> */}
-            <motion.div
-                initial={{ opacity: 0, scale: 0.5 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 1 }}>
-                <h1 className='main-heading'>Hello there!</h1>
-                <h2 className='heading-2'>I love building new things and fixing old things</h2>
-                <p className='intro-text'>Hi, my name is Scott Andermann and I took the scenic to web development. I spent the early part of my career designing off road vehicles.
-                From there I completed my MBA and transistioned into a Product Manager role for consumer goods.  I bring an endless curiosity to any new challenge
-                and won't hesitate to jump into the unknown to find the solution to a problem.</p>
-            </motion.div>
-
+            <div
+            >
+                <div>
+                    <motion.p className='greeting'
+                        initial={{
+                            y: -100,
+                            opacity: 0
+                        }}
+                        animate={{
+                            y: 0,
+                            opacity: 1
+                        }}
+                        transition={{
+                            duration: 0.5,
+                            type: 'ease',
+                            delay: 0
+                        }}>Hi, my name is</motion.p>
+                    <motion.h1 className='main-name'
+                        initial={{
+                            x: -100,
+                            opacity: 0
+                        }}
+                        animate={{
+                            x: 0,
+                            opacity: 1
+                        }}
+                        transition={{
+                            duration: 0.5,
+                            type: 'ease',
+                            delay: 0.5
+                        }}>Scott Andermann</motion.h1>
+                    <motion.h2 className='introduction-text'
+                        initial={{
+                            x: -100,
+                            opacity: 0
+                        }}
+                        animate={{
+                            x: 0,
+                            opacity: 1
+                        }}
+                        transition={{
+                            duration: 0.5,
+                            type: 'ease',
+                            delay: 1
+                        }}>I love building new things on the web and fixing old things in the real world</motion.h2>
+                    <motion.p className='descriptor'
+                        initial={{
+                            y: 100,
+                            opacity: 0
+                        }}
+                        animate={{
+                            y: 0,
+                            opacity: 1
+                        }}
+                        transition={{
+                            duration: 0.5,
+                            type: 'ease',
+                            delay: 1.5
+                        }}>I am a <span className='orange-highlight'>Software Engineer</span> specializing in modern technologies like Javascript and Python with years of experience as a <span className='green-highlight'>Product Manager</span> and <span className='green-highlight'>Mechanical Engineer</span></motion.p>
+                </div>
+            </div>
 
         </div>
     )

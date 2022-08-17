@@ -16,14 +16,17 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
+    "@fontsource/roboto": "^4.5.8",
     "emailjs": "^4.0.0",
     "framer-motion": "^7.0.0",
     "gatsby": "^4.19.2",
     "gatsby-plugin-image": "^2.19.0",
     "gatsby-plugin-manifest": "^4.20.0",
     "gatsby-plugin-sharp": "^4.19.0",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^4.19.0",
     "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react-dom": "^18.1.0",
+    "styled-components": "^5.3.5"
   }
 }

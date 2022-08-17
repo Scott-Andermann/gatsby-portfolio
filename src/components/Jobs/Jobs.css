@@ -1,19 +1,9 @@
-
-.job-bg {
-    background-color: #062230;
-    padding-bottom: 3rem;
-}
-
-.job-container {
-    padding-bottom: 4rem;
-}
-
 .job-header {
     background-color: #4C323B;
     box-shadow: 3px 3px 3px #D98FA9
 }
 
-h2 {
+.job-header-heading {
     color: #F2F2F2;
     margin-block-start: 5px;
     margin-block-end: 0;

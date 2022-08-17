@@ -1,61 +1,39 @@
-.avatar {
-    height: 175px;
-    border-radius: 50%;
-}
-
 .intro {
-    text-align: center;
-    background-image: url('../../images/mountainsbg2.jpg');
-    background-position: bottom;
-    background-size: cover;
-    padding-top: 15rem;
-    margin-top: -10rem;
-    padding-bottom: 9rem;
+    position: relative;
+    height: 70vh;
+    margin-left: 15vw;
+    margin-right: 25vw;
+    margin-top: 20vh;
+    text-align: left;
 }
 
-.intro-text {
-    line-height: 2rem;
-    color: #F2F2F2;
+.greeting {
+    color: #00d3a2;
+    font-size: 1rem;
+}
+
+.main-name {
+    color: #f2f2f2;
+    font-size: clamp(40px, 8vw, 80px);
+    font-weight: 900;
+}
+
+.introduction-text {
+    color: hsla(0,0%,100%,.6);
     font-weight: bold;
-    height: 10rem;
-    width: 80%;
-    margin: 16px auto;
-    max-width: 1000px;
-
+    font-size: clamp(20px, 4vw, 40px);
 }
 
-.main-heading {
-    text-align: center;
-    font-size: 3rem;
-    color: #f2f2f2;
+.descriptor {
+    font-size: 1rem;
+    color: hsla(0,0%,100%, 0.6);
 }
 
-.main-heading-container {
-    display: flex;
-    justify-content: left;
-    width: 262.79px;
-    margin: auto;
+.orange-highlight {
+    color: #FF6639;
+    font-weight: bold;
 }
 
-.letter {
-    min-width: 12px;
-}
-
-.heading-2 {
-    text-align: center;
-    color: #f2f2f2;
-    margin-bottom: 4rem;
-}
-
-
-
-.mountains {
-    height: 300px;
-}
-
-@media only screen and (max-width: 800px) {
-    .mountains {
-        width: 100%;
-        height: auto;
-    }
+.green-highlight {
+    color: #00d3a2
 }
