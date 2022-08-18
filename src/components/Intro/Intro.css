@@ -3,21 +3,10 @@
   border-radius: 50%;
 }
 
-.intro {
-  background-position: bottom;
-  background-size: cover;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.intro-container {
-  max-width: 900px;
-}
 @media only screen and (max-width: 985px) {
-	.intro {
-		padding: 25px;
-	}
+  .intro {
+    padding: 25px;
+  }
   .intro-container {
     max-width: 100%;
   }
@@ -35,11 +24,6 @@
   color: #ff6639;
   font-weight: bold;
 }
-.main-heading {
-  font-size: 1.4rem;
-  color: #64ffda;
-  font-weight: normal;
-}
 
 .main-heading-container {
   display: flex;
@@ -53,8 +37,7 @@
 }
 
 .heading-2 {
-  color: #f2f2f2;
-  font-size: clamp(40px, 8vw, 80px);
+  
 }
 .sub-heading {
   font-size: 3.5rem;

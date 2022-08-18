@@ -9,6 +9,7 @@ import Hobbies from '../components/Hobbies/Hobbies';
 import About from '../components/About';
 import styled from 'styled-components';
 import Footer from '../components/Footer';
+import Projects from '../components/Projects';
 
 const StyledMain = styled.main`
   display: flex;
@@ -23,6 +24,7 @@ const IndexPage = ({ data }) => {
     <StyledMain pageTitle="Hello there!">
       <Intro></Intro>
       <About />
+      <Projects />
       <Footer />
     </StyledMain>
   );
