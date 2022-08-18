@@ -1,3 +1,6 @@
+.top-hobbies {
+    margin: auto 85px;
+}
 
 .hobby-image {
     height: 400px;
@@ -10,7 +13,7 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
     /* height: 4rem; */
-    margin: auto 85px;
+    margin: auto;
     border-radius: 5px;
     margin-bottom: 2rem;
     margin-top: 2rem;
