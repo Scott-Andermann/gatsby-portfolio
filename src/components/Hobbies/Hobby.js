@@ -30,7 +30,7 @@ const Hobby = (props) => {
 
     return (
         <div className={`hobby ${props.name}`} onClick={handleClick} >
-            <img className='hobby-image' alt='hobby image' src={src(props.src)} />
+            <img className='hobby-image' alt='hobby' src={src(props.src)} />
             <div className='hobby-overlay' onClick={handleClick}>
                 <h2 className='hobby-text'>{props.name}</h2>
                 <p className='hobby-text'>{props.description}</p>

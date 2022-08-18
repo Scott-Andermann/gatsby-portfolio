@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { motion } from 'framer-motion';
 import './Code.css';
 import engineer from '../../images/engineer.png';
 import develop from '../../images/develop.png';

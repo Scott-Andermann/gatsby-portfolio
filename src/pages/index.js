@@ -5,18 +5,20 @@ import Jobs from "../components/Jobs/Jobs";
 import Intro from "../components/Intro/Intro";
 import Code from "../components/Code/Code";
 import Hobbies from "../components/Hobbies/Hobbies";
-import '@fontsource/roboto';
+import '@fontsource/roboto/';
+import '@fontsource/roboto/900.css'
 
 const IndexPage = ({data}) => {
 
+  const [isShowing, setIsShowing] = React.useState(false);
+
   return (
-    <Layout pageTitle='Hello there!'>
-      <Intro></Intro>
+    <Layout isShowing={isShowing} setIsShowing={setIsShowing}>
+      <Intro setIsShowing={setIsShowing}></Intro>
       <Code></Code>
       <Jobs></Jobs>
       <Hobbies data={data}></Hobbies>
     </Layout>
-
   )
 }
 

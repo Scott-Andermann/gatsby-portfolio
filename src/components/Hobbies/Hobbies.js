@@ -45,8 +45,8 @@ const Hobbies = () => {
         <div className='hobbies'>
             <div className='top-hobbies'>
                 <div className='header-container hobby-header'>
-                    <h2 className='hobby-header-text'>Extracurriculars</h2>
-                    <p className='hobby-header-text'>I spend my free time tinkering on all kinds of projects</p>
+                    <h2 className='header-text'>Extracurriculars</h2>
+                    <p className='header-text'>I spend my free time tinkering on all kinds of projects</p>
                 </div>
                 <div className='hobby-container'>
                     {hobbyData.map(element => <Hobby name={element.name}

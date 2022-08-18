@@ -1,19 +1,9 @@
 import * as React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
-import { StaticImage } from "gatsby-plugin-image";
 import './Jobs.css';
-import Job from '../Job/Job';
+import Job from './Job';
 
 const Jobs = () => {
-    const data = useStaticQuery(graphql`
-    query {
-        allFile {
-            nodes {
-                name
-            }
-        }
-    }`)
-    // console.log(data.allFile.nodes[0].name);
+
     const jobData = [{
         src: 'wessol',
         title: 'WESSOL, LLC',
@@ -38,16 +28,14 @@ const Jobs = () => {
 
     ]
     return (
-        <div>
-            <div className='job-container'>
-                <div className='header-container job-header'>
-                    <h2 className='job-header-text job-header-heading'>Previous Work Experience</h2>
-                    <p className='job-header-text'>Here is a quick overview of my professional career.  Interested in details? Please reach out!</p>
-                </div>
-                <div className='jobs'>
-                    {jobData.map(element => (
-                        <Job src={element.src} title={element.title} name={element.name} description={element.description} website={element.website} />))}
-                </div>
+        <div className='job-container'>
+            <div className='header-container job-header'>
+                <h2 className='header-text job-header-heading'>Previous Work Experience</h2>
+                <p className='header-text'>Here is a quick overview of my professional career.  Interested in details? Please reach out!</p>
+            </div>
+            <div className='jobs'>
+                {jobData.map(element => (
+                    <Job src={element.src} title={element.title} name={element.name} description={element.description} website={element.website} />))}
             </div>
         </div>
 

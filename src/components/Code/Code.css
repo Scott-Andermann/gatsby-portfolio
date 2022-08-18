@@ -1,9 +1,8 @@
-
-
 .code {
     display: flex;
     justify-content: center;
     max-height: 600px;
+    width: 100%;
     max-width: 999px;
     border: 2px solid rgb(216, 216, 216);
     border-radius: 10px;
@@ -22,12 +21,13 @@ h4 {
 }
 
 .column {
+    flex: 1;
     display: block;
     padding-top: 40px;
     padding-bottom: 40px;
     padding-left: 20px;
     padding-right: 20px;
-    width: 333px;
+    /* width: 333px; */
     text-align: center;
 }
 

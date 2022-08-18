@@ -1,17 +1,15 @@
 import * as React from 'react';
 import './Intro.css';
 import { motion } from 'framer-motion';
-import MainHeading from './MainHeading';
 
 //I love building new things on the web and fixing old things in the real world
 //I'm a software engineer specializing in modern technologies like Javascript and Python, with years of experience
 //as a mechanical engineer and produc manager
-const Intro = () => {
+const Intro = ({ setIsShowing }) => {
     return (
         <div className='intro'>
             {/* <MainHeading text='Hello there!' /> */}
-            <div
-            >
+            <div>
                 <div>
                     <motion.p className='greeting'
                         initial={{
@@ -69,6 +67,9 @@ const Intro = () => {
                             type: 'ease',
                             delay: 1.5
                         }}>I am a <span className='orange-highlight'>Software Engineer</span> specializing in modern technologies like Javascript and Python with years of experience as a <span className='green-highlight'>Product Manager</span> and <span className='green-highlight'>Mechanical Engineer</span></motion.p>
+                    <div className='contact-button' onClick={() => setIsShowing(true)}>
+                        <h3 className='contact-button-text'>Give me a shout</h3>
+                    </div>
                 </div>
             </div>
 

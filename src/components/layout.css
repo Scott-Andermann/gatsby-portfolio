@@ -21,40 +21,11 @@ nav {
 
 h3 {
     color: #F2F2F2;
-    margin-bottom: 10px;
 }
 
-.nav-links {
-    display: flex;
-    list-style: none;
-    justify-content: right;
-    padding-left: 0;
-    margin-right: 150px;
-}
 
-.nav-link-item {
-    padding: 1rem;
-    border-radius: 5px;
-    font-size: 20px;
-    border: 2px solid #FF6639;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-}
 
-.nav-link-item:hover {
-    /* box-shadow: 2px 2px 2px #00AD85; */
-    background-color: rgba(242,242,242, 0.25);
-}
 
-.nav-link-item:active {
-    box-shadow: inset 0 0 10px #062230;
-}
-
-.nav-link-text {
-    color: #FF6639;
-    font-weight: bold;
-    font-size: 26px;
-}
 
 .site-title {
     font-size: 3rem;
@@ -158,8 +129,8 @@ footer {
     align-items: center;
     margin: auto;
     max-width: 1000px;
-    background-color: rgba(173,52,12,1);
-    border-radius: 10px;
+    background-color: #c24e2b;
+    border-radius: 5px;
     box-shadow: 3px 3px 3px #FF6639;
 
     transition: background-color 0.25s ease, box-shadow 0.25s ease;
@@ -167,10 +138,10 @@ footer {
 
 .footer-contact-button {
     padding: .75rem;
-    border-radius: 2rem;
+    border-radius: 5px;
     border: 2px solid white;
     font-size: 18px;
-    background-color: rgba(173,52,12,1);
+    background-color: #c24e2b;
     transition: background-color 0.3s ease;
     cursor: pointer;
     box-shadow: 3px 3px 3px #FF6639
@@ -179,6 +150,11 @@ footer {
 .contact-me {
     margin-block-end: 0;
     margin-block-start: 0;
+    font-weight: normal;
+}
+
+.footer-text {
+    color: #f2f2f2;
 }
 
 .footer-contact-button:hover {
