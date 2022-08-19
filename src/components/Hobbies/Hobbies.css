@@ -6,6 +6,7 @@
     height: 400px;
     max-width: 450px;
     border-radius: 10px;
+    width: 100%;
 }
 
 .header-container {
@@ -126,7 +127,7 @@
     }
 
     .hobby {
-        width: auto;
+        width: 100%;
         height: auto;
         margin-right: 0px;
         margin-left: 0px;

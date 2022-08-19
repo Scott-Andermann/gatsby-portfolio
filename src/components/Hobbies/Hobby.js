@@ -1,10 +1,10 @@
 import * as React from 'react';
-import gitHubWhite from '../../images/githubwhite.png';
 import flappyBird from '../../images/flappybird2.gif';
 import warranty from '../../images/warranty.png';
 import powerMeter from '../../images/powermeter.jpg';
 import weather from '../../images/weather.png';
 import sentiment from '../../images/sentiment.png';
+import stl from '../../images/stlcompressed.gif';
 
 
 const Hobby = (props) => {
@@ -21,6 +21,8 @@ const Hobby = (props) => {
                 return warranty;
             case 'sentiment':
                 return sentiment;
+            case 'stl':
+                return stl;
         }
     }
 
