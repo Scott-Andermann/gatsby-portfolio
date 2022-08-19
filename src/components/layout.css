@@ -115,7 +115,8 @@ footer {
 }
 
 .contact-text {
-    color: #f2f2f2
+    color: #f2f2f2;
+    font-weight: 500;
 }
 
 .contact-icon {
@@ -155,6 +156,7 @@ footer {
 
 .footer-text {
     color: #f2f2f2;
+    font-weight: 500;
 }
 
 .footer-contact-button:hover {
@@ -168,10 +170,11 @@ footer {
     box-shadow: inset 0 0 20px #062230;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1170px) {
     footer {
         padding-left: 10px;
         padding-right: 10px;
+        margin: auto 85px;
     }
     
     .contact-list {
@@ -199,8 +202,9 @@ footer {
     footer {
         padding-left: 0px;
         padding-right: 0px;
+        margin: auto;
     }
-
+    
     .footer-text {
         font-size: 20px;
     }

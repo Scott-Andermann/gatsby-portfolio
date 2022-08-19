@@ -3,7 +3,6 @@
 }
 .job-header {
     background-color: #c24e2b;
-    box-shadow: 3px 3px 3px #D98FA9
 }
 
 .job-header-heading {
@@ -94,6 +93,12 @@ a {
     font-size: 20px;
     color: white;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 900px) {
+    .job-container {
+        margin: auto;
+    }
 }
 
 @media only screen and (max-width: 500px) {

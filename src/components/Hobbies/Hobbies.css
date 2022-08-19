@@ -29,6 +29,7 @@
     text-align: center;
     margin-block-start: 0;
     color: #f2f2f2;
+    font-weight: 500;
 }
 
 .hobby {
@@ -110,17 +111,22 @@
     .header-container {
         margin: 32px auto;
         width: 450px;
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
 }
 
 @media only screen and (max-width: 600px) {
+    .top-hobbies {
+        margin: auto;
+    }
+    
     .hobby-container {
         margin: auto 10px;
     }
 
     .hobby {
+        width: auto;
         height: auto;
         margin-right: 0px;
         margin-left: 0px;
@@ -135,7 +141,7 @@
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 450px) {
     .header-container {
         width: auto;
         margin-left: 10px;

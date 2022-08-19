@@ -31,7 +31,7 @@ const Jobs = () => {
         <div className='job-container'>
             <div className='header-container job-header'>
                 <h2 className='header-text job-header-heading'>Previous Work Experience</h2>
-                <p className='header-text'>Here is a quick overview of my professional career.  Interested in details? Please reach out!</p>
+                <p className='header-text'>A quick overview of my professional career.</p>
             </div>
             <div className='jobs'>
                 {jobData.map(element => (
