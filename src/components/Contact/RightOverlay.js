@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const Rotate = styled.p`
 writing-mode: vertical-rl;
 margin: 32px 0;
+color: #F2F2F2;
 `
 
 const RightDiv = styled.div`
@@ -23,7 +24,7 @@ const RightOverlay = () => {
   
   return (
     <RightDiv>
-        <Rotate><a href="mailto:scottandermann@gmail.com">ScottAndermann@gmail</a></Rotate>
+        <Rotate><a href="mailto:scottandermann@gmail.com" style={{color: '#F2F2F2'}}>ScottAndermann@gmail</a></Rotate>
     </RightDiv>
   )
 };

@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import github from '../../images/github65ccb8.png';
-import email from '../../images/email.png';
-import phone from '../../images/phone.png';
+// import email from '../../images/email.png';
+// import phone from '../../images/phone.png';
 import linkedin from '../../images/linkedin.png';
 
 const SocialList = styled.ul`
@@ -32,8 +32,8 @@ const LeftOverlay = () => {
   
   return (
     <SocialList>
-        <li><a href='https://github.com/Scott-Andermann'><SocialIcon src={github} alt='contact icon github' /></a></li>
-        <SocialElement><a href='https://linkedin.com/in/Scott-Andermann'><SocialIcon src={linkedin} alt='contact icon linkedin' /></a></SocialElement>
+        <li><a href='https://github.com/Scott-Andermann' target="_blank" rel='noreferrer'><SocialIcon src={github} alt='contact icon github' /></a></li>
+        <SocialElement><a href='https://linkedin.com/in/Scott-Andermann' target="_blank" rel='noreferrer'><SocialIcon src={linkedin} alt='contact icon linkedin' /></a></SocialElement>
     </SocialList>
   )
 };

@@ -10,6 +10,7 @@ width: 100vw;
 height: 100vh;
 display: flex;
 justify-content: space-between;
+pointer-events: none;
 `
 
 const MarginOverlay = styled.div`
@@ -17,7 +18,9 @@ width: 100%;
 margin: 0 5vw;
 display: flex;
 align-items: end;
-justify-content: space-between;`
+justify-content: space-between;
+pointer-events: all;
+`
 
 const ContactOverlay = () => {
 
