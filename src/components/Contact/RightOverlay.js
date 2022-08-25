@@ -5,6 +5,7 @@ const Rotate = styled.p`
 writing-mode: vertical-rl;
 margin: 32px 0;
 color: #F2F2F2;
+text-decoration: none;
 `
 
 const RightDiv = styled.div`
@@ -16,7 +17,7 @@ align-items: center;
     content: "";
     display: block;
     border-left: 1px solid #F2F2F2;
-    height: 25vh;
+    height: 30vh;
     color: white;
 }`
 
@@ -24,7 +25,7 @@ const RightOverlay = () => {
   
   return (
     <RightDiv>
-        <Rotate><a href="mailto:scottandermann@gmail.com" style={{color: '#F2F2F2'}}>ScottAndermann@gmail</a></Rotate>
+        <Rotate><a href="mailto:scottandermann@gmail.com" style={{color: '#F2F2F2', textDecoration: 'none'}}>ScottAndermann@gmail</a></Rotate>
     </RightDiv>
   )
 };

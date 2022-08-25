@@ -1,45 +1,95 @@
-export const projectContent = [
-    {
-        name: '3D STL Previewer',
-        tools: ['Javascript', 'React', 'ThreeJS'],
-        description: 'React based app that previews STL files used for 3D printing in the browser',
-        src: 'stl',
-        github: 'https://github.com/Scott-Andermann/stl-viewer'
-    },
-    {
-        name: 'Warranty Tracker',
-        tools: ['Python', 'Plotly', 'ShopifyAPI'],
-        description: 'Created a python based web-app to track warranty claims over time and reduce warranty spending by >50%.  Accessible company wide to support real time data-driven decision making.',
-        src: 'warranty',
-        github: 'https://github.com/Scott-Andermann/shopify-warranty'
-    },
-    {
-        name: 'Review Scraper',
-        tools: ['Python', 'NLTK', 'Beautiful Soup'],
-        description: 'Competitive analysis tool to scrape Amazon and Home Depot reviews of any product.',
-        src: 'sentiment',
-        github: 'https://github.com/Scott-Andermann/review-scraper'
-    },
+import React from 'react';
+import styled from 'styled-components';
+import Tools from './Tools';
+import warranty from '../../images/warranty.png';
+import flappyBird from '../../images/flappybird2.gif';
+import powerMeter from '../../images/powermeter.jpg';
+import weather from '../../images/weather.png';
+import sentiment from '../../images/sentiment.png';
+import stl from '../../images/stlcompressed.gif';
 
-    {
-        name: 'Weather App',
-        tools: ['Javascript', 'React', 'CSS'],
-        description: 'Single page React app with location and weather API calls.  Shows current and forecast weather information for any US zipcode.',
-        src: 'weather',
-        github: 'https://github.com/Scott-Andermann/weatherApp'
-    },
-    {
-        name: 'ML Flappy Bird',
-        tools: ['Pygame', 'Machine Learning'],
-        description: 'Built an interactive game with machine learning integration to explore ML/AI tools.',
-        src: 'flappy',
-        github: 'https://github.com/Scott-Andermann/flappyBird'
-    },
-    {
-        name: 'Cycling power meter',
-        tools: ['CircuitPy', 'Circuit Design', '3D printing'],
-        description: 'Designed, built, and debugged bluetooth power meter for bicycles.  Integrated gyroscope, accelerometer, and custom Wheatstone bridge for measuring force and calculating power.',
-        src: 'powerMeter',
-        github: '#'
+
+
+const ContentContainer = styled.div`
+position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;`
+
+    
+const OverlayDiv = styled.div`
+position: absolute;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+right: 0;
+top: 0;
+height: 100%;
+width: 50%;
+`
+
+const DescriptorDiv = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: right;
+background-color: #104966;
+height: 50%;
+text-align: right;
+border-radius: 3px;
+padding: 1rem;
+`
+
+const ProjectTitle = styled.h3`
+color: #F2F2F2;
+margin: 0.5rem;
+margin-bottom: 1rem;
+`
+
+const ProjectDescription = styled.p`
+line-height: 1.5rem;
+`
+
+const ProjectImg = styled.img`
+height: 40vh;
+width: auto;
+border-radius: 3px;`
+
+const Content = ({content}) => {
+
+    const src = () => {
+        switch (content.src) {
+            case 'powerMeter':
+                return powerMeter;
+            case 'flappy':
+                return flappyBird;
+            case 'weather':
+                return weather;
+            case 'warranty':
+                return warranty;
+            case 'sentiment':
+                return sentiment;
+            case 'stl':
+                return stl;
+            default:
+                return weather;
+        }
     }
-]
+
+
+    return (
+        <ContentContainer>
+            <ProjectImg src={src(content.src)} />
+            <OverlayDiv>
+                <DescriptorDiv>
+                    <ProjectTitle>{content.name}</ProjectTitle>
+                    <ProjectDescription>{content.description}</ProjectDescription>
+                </DescriptorDiv>
+                <Tools toolsList={content.tools}/>
+            </OverlayDiv>
+        </ContentContainer>
+    )
+}
+
+export default Content;

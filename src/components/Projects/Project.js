@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
 import ArrowBullet from '../../images/ArrowBullet';
-import Content from './Content';
+import Content from './ProjectContent';
 import './Project.css';
 import { AnimatePresence, motion } from 'framer-motion';
 import {wrap} from 'popmotion';
@@ -15,6 +15,7 @@ justify-content: space-between;
 width: 100%;
 height: 50vh;
 position: relative;
+overflow: hidden;
 `
 
 const arrowStyle = {
