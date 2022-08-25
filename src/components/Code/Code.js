@@ -4,7 +4,6 @@ import engineer from '../../images/engineer.png';
 import develop from '../../images/develop.png';
 import product from '../../images/product.png';
 
-
 const Code = () => {
     return (
         <div className='code-container'>

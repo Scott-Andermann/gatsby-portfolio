@@ -1,5 +1,5 @@
 import * as React from "react";
-import Layout from "../components/layout";
+import Layout from "../components/Layout/layout";
 import { graphql } from "gatsby";
 import Jobs from "../components/Jobs/Jobs";
 import Intro from "../components/Intro/Intro";
@@ -15,9 +15,9 @@ const IndexPage = ({data}) => {
   return (
     <Layout isShowing={isShowing} setIsShowing={setIsShowing}>
       <Intro setIsShowing={setIsShowing}></Intro>
-      <Code></Code>
+      {/* <Code></Code>
       <Jobs></Jobs>
-      <Hobbies data={data}></Hobbies>
+      <Hobbies data={data}></Hobbies> */}
     </Layout>
   )
 }

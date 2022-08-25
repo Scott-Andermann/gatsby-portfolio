@@ -21,7 +21,7 @@ const Intro = ({ setIsShowing }) => {
                             opacity: 1
                         }}
                         transition={{
-                            duration: 0.5,
+                            duration: 0.4,
                             type: 'ease',
                             delay: 0
                         }}>Hi, my name is</motion.p>
@@ -35,9 +35,9 @@ const Intro = ({ setIsShowing }) => {
                             opacity: 1
                         }}
                         transition={{
-                            duration: 0.5,
+                            duration: 0.4,
                             type: 'ease',
-                            delay: 0.5
+                            delay: 0.4
                         }}>Scott Andermann</motion.h1>
                     <motion.h2 className='introduction-text'
                         initial={{
@@ -49,9 +49,9 @@ const Intro = ({ setIsShowing }) => {
                             opacity: 1
                         }}
                         transition={{
-                            duration: 0.5,
+                            duration: 0.4,
                             type: 'ease',
-                            delay: 1
+                            delay: 0.8
                         }}>I love building new things on the web and fixing old things in the real world</motion.h2>
                     <motion.p className='descriptor'
                         initial={{
@@ -63,13 +63,20 @@ const Intro = ({ setIsShowing }) => {
                             opacity: 1
                         }}
                         transition={{
-                            duration: 0.5,
+                            duration: 0.4,
                             type: 'ease',
-                            delay: 1.5
+                            delay: 1.2
                         }}>I am a <span className='orange-highlight'>Software Engineer</span> specializing in modern technologies like Javascript and Python with years of experience as a <span className='green-highlight'>Product Manager</span> and <span className='green-highlight'>Mechanical Engineer</span></motion.p>
-                    <div className='contact-button' onClick={() => setIsShowing(true)}>
+                    <motion.div className='contact-button' onClick={() => setIsShowing(true)}
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    transition={{
+                        duration: 0.4,
+                        type: 'ease',
+                        delay: 1.6
+                    }}>
                         <h3 className='contact-button-text'>Give me a shout</h3>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
 

@@ -1,9 +1,10 @@
 import * as React from 'react';
-import github from '../images/github65ccb8.png';
-import email from '../images/email.png';
-import phone from '../images/phone.png';
-import linkedin from '../images/linkedin.png';
-import ContactForm from './ContactForm/ContactForm';
+import github from '../../images/github65ccb8.png';
+import email from '../../images/email.png';
+import phone from '../../images/phone.png';
+import linkedin from '../../images/linkedin.png';
+import ContactForm from '../Contact/ContactForm';
+import ContactOverlay from '../Contact/ContactOverlay';
 import './layout.css';
 
 const Layout = ({ isShowing, setIsShowing, children }) => {
@@ -22,16 +23,7 @@ const Layout = ({ isShowing, setIsShowing, children }) => {
             <title>Hello there! | Scott Andermann</title>
             {/* Need to move contact form to new component since it could be used in places other than Layout */}
             <ContactForm isShowing={isShowing} exitButton={exitButton} closeForm={closeForm} />
-            <div className='contact-overlay'>
-                <div>
-                    <li className='icon-wrapper'><a href='https://github.com/Scott-Andermann'><img className='contact-icon' src={github} /></a></li>
-                    <li className='icon-wrapper'><a href='https://www.linkedin.com/in/scott-andermann'><img className='contact-icon' src={linkedin} /></a></li>
-                </div>
-                <div className='email-overlay'>
-                    <a href="mailto:scottandermann@gmail.com">ScottAndermann@gmail</a>
-                </div>
-            </div>
-
+            <ContactOverlay />
             <main>
                 {children}
             </main>
