@@ -3,6 +3,8 @@ import Layout from "../components/Layout/layout";
 import { graphql } from "gatsby";
 import Jobs from "../components/Jobs/Jobs";
 import Intro from "../components/Intro/Intro";
+import Projects from "../components/Projects/Projects";
+import About from "../components/About/About";
 import Code from "../components/Code/Code";
 import Hobbies from "../components/Hobbies/Hobbies";
 import '@fontsource/roboto/';
@@ -15,6 +17,8 @@ const IndexPage = ({data}) => {
   return (
     <Layout isShowing={isShowing} setIsShowing={setIsShowing}>
       <Intro setIsShowing={setIsShowing}></Intro>
+      <About />
+      <Projects />
       {/* <Code></Code>
       <Jobs></Jobs>
       <Hobbies data={data}></Hobbies> */}
