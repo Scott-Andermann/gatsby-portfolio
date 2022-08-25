@@ -1,8 +1,9 @@
 import React from "react"
 
-export default function ArrowBullet({style, className}) {
+export default function ArrowBullet({style, className, onClick}) {
     return (
       <svg
+        onClick={onClick}
         className={className}
         xmlns="http://www.w3.org/2000/svg"
         width={style.width}
