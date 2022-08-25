@@ -4,6 +4,9 @@ import PythonIcon from "../../images/PythonIcon";
 import PlotlyIcon from "../../images/PlotlyIcon";
 import ShopifyIcon from "../../images/ShopifyIcon";
 import ComputerIcon from "../../images/ComputerIcon";
+import ThreeIcon from "../../images/ThreeIcon";
+import JSIcon from "../../images/JSIcon";
+import ReactIcon from "../../images/ReactIcon";
 
 
 const ToolsDiv = styled.div`
@@ -11,7 +14,6 @@ display: flex;
 justify-content: space-around;
 align-items: center;
 height: 15%;
-margin-left: 15%;
 margin-right: 0;
 width: auto;
 background-color: #104966;
@@ -46,6 +48,12 @@ const Tools = ({toolsList}) => {
                 return <PlotlyIcon style={iconStyle} />
             case 'ShopifyAPI':
                 return <ShopifyIcon style={iconStyle} />
+            case 'ThreeJS':
+                return <ThreeIcon style={iconStyle} />
+            case 'Javascript':
+                return <JSIcon style={iconStyle} />
+            case 'React':
+                return <ReactIcon style={iconStyle} />
             default:
                 return <ComputerIcon style={iconStyle} />
         }

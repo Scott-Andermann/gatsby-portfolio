@@ -6,18 +6,20 @@ import './Project.css';
 import { AnimatePresence, motion } from 'framer-motion';
 import {wrap} from 'popmotion';
 
+const arrowSize = '50px'
+
 const ProjectContainer = styled.div`
 display: flex;
 align-items: center;
-justify-content: left;
+justify-content: space-between;
 width: 100%;
 height: 50vh;
 position: relative;
 `
 
 const arrowStyle = {
-    height: '40px',
-    width: '40px',
+    height: arrowSize,
+    width: arrowSize,
     fill: '#00d3a2',
 }
 
@@ -46,6 +48,7 @@ const variants = {
       };
     }
   };
+  
 
 
 const Project = ({projectContent}) => {
@@ -60,35 +63,38 @@ const Project = ({projectContent}) => {
     return (
         <ProjectContainer>
             <ArrowBullet style={arrowStyle} className='left-arrow' onClick={() => paginate(-1)}/>
-            <AnimatePresence initial={false} custom={direction}>
-                <motion.div 
-                className='animate'
-                key={page}
-                custom={direction}
-                variants={variants}
-                initial="enter"
-                animate="center"
-                exit="exit"
-                transition={{
-                  x: { type: "spring", stiffness: 300, damping: 30 },
-                  opacity: { duration: 0.2 }
-                }}
-                drag="x"
-                dragConstraints={{ left: 0, right: 0 }}
-                dragElastic={1}
-                onDragEnd={(e, { offset, velocity }) => {
-                  const swipe = swipePower(offset.x, velocity.x);
-      
-                  if (swipe < -swipeConfidenceThreshold) {
-                    paginate(1);
-                  } else if (swipe > swipeConfidenceThreshold) {
-                    paginate(-1);
-                  }
-                }}>
-                <Content content={projectContent[projectIndex]}/>
+            <div style={{width: '100%', height: '100%', position: 'relative'}}>
+                <AnimatePresence initial={false} custom={direction}>
+                    <motion.div 
+                    className='animate'
+                    key={page}
+                    custom={direction}
+                    variants={variants}
+                    initial="enter"
+                    animate="center"
+                    exit="exit"
+                    transition={{
+                        x: { type: "spring", stiffness: 300, damping: 30 },
+                        opacity: { duration: 0.2 }
+                    }}
+                    drag="x"
+                    dragConstraints={{ left: 0, right: 0 }}
+                    dragElastic={1}
+                    onDragEnd={(e, { offset, velocity }) => {
+                        const swipe = swipePower(offset.x, velocity.x);
 
-                </motion.div>
-            </AnimatePresence>
+                        if (swipe < -swipeConfidenceThreshold) {
+                        paginate(1);
+                        } else if (swipe > swipeConfidenceThreshold) {
+                        paginate(-1);
+                        }
+                    }}>
+                        
+                        <Content content={projectContent[projectIndex]}/>
+
+                    </motion.div>
+                </AnimatePresence>
+            </div>
             <ArrowBullet style={arrowStyle} className='right-arrow' onClick={() => paginate(1)}/>
         </ProjectContainer>
     )

@@ -27,7 +27,7 @@ justify-content: space-between;
 right: 0;
 top: 0;
 height: 100%;
-width: 30vw;
+width: 50%;
 `
 
 const DescriptorDiv = styled.div`
@@ -35,7 +35,7 @@ display: flex;
 flex-direction: column;
 justify-content: right;
 background-color: #104966;
-height: 40%;
+height: 50%;
 text-align: right;
 border-radius: 3px;
 padding: 1rem;
@@ -44,6 +44,7 @@ padding: 1rem;
 const ProjectTitle = styled.h3`
 color: #F2F2F2;
 margin: 0.5rem;
+margin-bottom: 1rem;
 `
 
 const ProjectDescription = styled.p`
