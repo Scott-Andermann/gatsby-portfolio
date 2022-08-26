@@ -7,7 +7,7 @@ import { projectContent } from './projectInfo';
 const ContainerDiv = styled.section`
 height: 75vh;
 width: 100%;
-color: #F2F2F2;
+color: white;
 `
 
 const Projects = () => {

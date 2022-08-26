@@ -7,33 +7,34 @@ import ComputerIcon from "../../images/ComputerIcon";
 import ThreeIcon from "../../images/ThreeIcon";
 import JSIcon from "../../images/JSIcon";
 import ReactIcon from "../../images/ReactIcon";
-
+import CSSIcon from "../../images/CSSIcon";
+import MLIcon from "../../images/MLIcon";
 
 const ToolsDiv = styled.div`
 display: flex; 
-justify-content: space-around;
-align-items: center;
-height: 15%;
+margin-left: auto;
 margin-right: 0;
-width: auto;
-background-color: #104966;
-border-radius: 3px;
+justify-content: space-between;
+align-items: center;
+width: 80%;
 padding: 1rem;
+padding-right: 1.5rem;
 `
 
 const ToolSpan = styled.span`
 display: inline-flex;
 `
 
-const ToolText = styled.h4`
+const ToolText = styled.p`
 margin-left: 10px;
-color: #a8b2d1;
+opacity: 0.6;
 `
 
 const iconStyle = {
     height: '20px',
     width: '20px',
-    fill: '#a8b2d1'
+    fill: '#FFFFFF',
+    fillOpacity: 0.6
 }
 
 
@@ -54,6 +55,10 @@ const Tools = ({toolsList}) => {
                 return <JSIcon style={iconStyle} />
             case 'React':
                 return <ReactIcon style={iconStyle} />
+            case 'CSS':
+                return <CSSIcon style={iconStyle} />
+            case 'Machine Learning':
+                return <MLIcon style={iconStyle} />
             default:
                 return <ComputerIcon style={iconStyle} />
         }

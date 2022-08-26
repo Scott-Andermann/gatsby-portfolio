@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
 import ArrowBullet from '../../images/ArrowBullet';
-import Content from './ProjectContent';
+import ProjectContent from './ProjectContent';
 import './Project.css';
 import { AnimatePresence, motion } from 'framer-motion';
 import {wrap} from 'popmotion';
@@ -91,7 +91,7 @@ const Project = ({projectContent}) => {
                         }
                     }}>
                         
-                        <Content content={projectContent[projectIndex]}/>
+                        <ProjectContent content={projectContent[projectIndex]}/>
 
                     </motion.div>
                 </AnimatePresence>

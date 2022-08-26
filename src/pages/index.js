@@ -3,8 +3,10 @@ import Layout from "../components/Layout/layout";
 import { graphql } from "gatsby";
 // import Jobs from "../components/Jobs/Jobs";
 import Intro from "../components/Intro/Intro";
-import Projects from "../components/Projects/Projects";
 import About from "../components/About/About";
+import Projects from "../components/Projects/Projects";
+import Work from "../components/Work/Work";
+import Footer from "../components/Footer/Footer";
 // import Code from "../components/Code/Code";
 // import Hobbies from "../components/Hobbies/Hobbies";
 import '@fontsource/roboto/';
@@ -19,6 +21,8 @@ const IndexPage = ({data}) => {
       <Intro setIsShowing={setIsShowing}></Intro>
       <About />
       <Projects />
+      <Work />
+      <Footer />
       {/* <Code></Code>
       <Jobs></Jobs>
       <Hobbies data={data}></Hobbies> */}

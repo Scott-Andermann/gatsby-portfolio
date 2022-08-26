@@ -21,25 +21,25 @@ export const projectContent = [
         github: 'https://github.com/Scott-Andermann/review-scraper'
     },
 // these three will go into minor projects cards
-    {
-        name: 'Weather App',
-        tools: ['Javascript', 'React', 'CSS'],
-        description: 'I used this project as a way to explore React components and best practices for API calls.  Using the OpenWeather API, the user is able to find the current weather and 7 day forecast for any zipcode within the US.',
-        src: 'weather',
-        github: 'https://github.com/Scott-Andermann/weatherApp'
-    },
-    {
-        name: 'ML Flappy Bird',
-        tools: ['Pygame', 'Machine Learning'],
-        description: 'Built an interactive game with machine learning integration to explore ML/AI tools.',
-        src: 'flappy',
-        github: 'https://github.com/Scott-Andermann/flappyBird'
-    },
-    {
-        name: 'Cycling power meter',
-        tools: ['CircuitPy', 'Circuit Design', '3D printing'],
-        description: 'Designed, built, and debugged bluetooth power meter for bicycles.  Integrated gyroscope, accelerometer, and custom Wheatstone bridge for measuring force and calculating power.',
-        src: 'powerMeter',
-        github: '#'
-    }
+    // {
+    //     name: 'Weather App',
+    //     tools: ['Javascript', 'React', 'CSS'],
+    //     description: 'I used this project as a way to explore React components and best practices for API calls.  Using the OpenWeather API, the user is able to find the current weather and 7 day forecast for any zipcode within the US.',
+    //     src: 'weather',
+    //     github: 'https://github.com/Scott-Andermann/weatherApp'
+    // },
+    // {
+    //     name: 'ML Flappy Bird',
+    //     tools: ['Pygame', 'Machine Learning'],
+    //     description: 'Built an interactive game with machine learning integration to explore ML/AI tools.',
+    //     src: 'flappy',
+    //     github: 'https://github.com/Scott-Andermann/flappyBird'
+    // },
+    // {
+    //     name: 'Cycling power meter',
+    //     tools: ['CircuitPy', 'Circuit Design', '3D printing'],
+    //     description: 'Designed, built, and debugged bluetooth power meter for bicycles.  Integrated gyroscope, accelerometer, and custom Wheatstone bridge for measuring force and calculating power.',
+    //     src: 'powerMeter',
+    //     github: '#'
+    // }
 ]

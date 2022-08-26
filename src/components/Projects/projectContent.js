@@ -23,7 +23,7 @@ const OverlayDiv = styled.div`
 position: absolute;
 display: flex;
 flex-direction: column;
-justify-content: space-between;
+justify-content: flex-start;
 right: 0;
 top: 0;
 height: 100%;
@@ -35,28 +35,28 @@ display: flex;
 flex-direction: column;
 justify-content: right;
 background-color: #104966;
-height: 50%;
 text-align: right;
 border-radius: 3px;
-padding: 1rem;
+padding: 1.5rem;
 `
 
 const ProjectTitle = styled.h3`
 color: #F2F2F2;
-margin: 0.5rem;
 margin-bottom: 1rem;
 `
 
 const ProjectDescription = styled.p`
 line-height: 1.5rem;
+opacity: 0.85;
 `
 
 const ProjectImg = styled.img`
 height: 40vh;
-width: auto;
-border-radius: 3px;`
+width: 60%;
+border-radius: 3px;
+`
 
-const Content = ({content}) => {
+const ProjectContent = ({content}) => {
 
     const src = () => {
         switch (content.src) {
@@ -92,4 +92,4 @@ const Content = ({content}) => {
     )
 }
 
-export default Content;
+export default ProjectContent;

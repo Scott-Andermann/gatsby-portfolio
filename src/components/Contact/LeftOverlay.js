@@ -15,8 +15,9 @@ bottom: 0;
     content: "";
     display: block;
     border-left: 1px solid #F2F2F2;
-    height: 37vh;
+    height: 27vh;
     color: white;
+    opacity: 0.6;
 }
 `;
 
