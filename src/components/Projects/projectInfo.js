@@ -1,4 +1,4 @@
-export const projectContent = [
+export const projectInfo = [
     {
         name: '3D STL Previewer',
         tools: ['Javascript', 'React', 'ThreeJS'],
@@ -15,7 +15,7 @@ export const projectContent = [
     },
     {
         name: 'Online Review Scraper',
-        tools: ['Python', 'NLTK', 'Beautiful Soup'],
+        tools: ['Python', 'NLTK', 'BS4'],
         description: 'This web scraper was built using Beautiful Soup 4 to gather reviews from Amazon and Home Depot.  Scraping was performed in compliance with the published robots.txt specification for each site.  After gathering the reviews, there are tools that can be used to analyze and summarize the data including sentiment analysis using NLTK and time based analysis to understand market trends.',
         src: 'sentiment',
         github: 'https://github.com/Scott-Andermann/review-scraper'

@@ -10,7 +10,8 @@ import Footer from "../components/Footer/Footer";
 // import Code from "../components/Code/Code";
 // import Hobbies from "../components/Hobbies/Hobbies";
 import '@fontsource/roboto/';
-import '@fontsource/roboto/900.css'
+import '@fontsource/roboto/700.css';
+import '@fontsource/roboto/900.css';
 
 const IndexPage = ({data}) => {
 

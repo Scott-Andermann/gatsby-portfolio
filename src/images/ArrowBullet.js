@@ -6,6 +6,7 @@ export default function ArrowBullet({style, className, onClick}) {
         onClick={onClick}
         className={className}
         xmlns="http://www.w3.org/2000/svg"
+        marginBottom={style.marginBottom ? style.marginBottom : 0}
         width={style.width}
         height={style.height}
         enableBackground="new 0 0 512 512"

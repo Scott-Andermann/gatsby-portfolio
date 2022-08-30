@@ -52,11 +52,11 @@ const variants = {
   
 
 
-const Project = ({projectContent}) => {
+const Project = ({projectInfo}) => {
 
     const [[page, direction], setPage] = useState([0,0]);
 
-    const projectIndex = wrap(0, projectContent.length, page);
+    const projectIndex = wrap(0, projectInfo.length, page);
 
     const paginate = (newDirection) => {
         setPage([page + newDirection, newDirection]);
@@ -91,7 +91,7 @@ const Project = ({projectContent}) => {
                         }
                     }}>
                         
-                        <ProjectContent content={projectContent[projectIndex]}/>
+                        <ProjectContent content={projectInfo[projectIndex]}/>
 
                     </motion.div>
                 </AnimatePresence>

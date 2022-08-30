@@ -19,10 +19,14 @@ align-items: center;
 width: 80%;
 padding: 1rem;
 padding-right: 1.5rem;
+
 `
 
 const ToolSpan = styled.span`
 display: inline-flex;
+@media (max-width: 1024px) {
+    margin: .25rem 0;
+}
 `
 
 const ToolText = styled.p`
@@ -39,7 +43,7 @@ const iconStyle = {
 
 
 
-const Tools = ({toolsList}) => {
+const Tools = ({toolsList, className}) => {
 
     const iconPicker = (tool) => {
         switch (tool) {
@@ -75,7 +79,7 @@ const Tools = ({toolsList}) => {
     }
 
     return (
-        <ToolsDiv>
+        <ToolsDiv className={className}>
             {toolsList && toolsList.map(tool => buildTool(tool))}
         </ToolsDiv>
     )

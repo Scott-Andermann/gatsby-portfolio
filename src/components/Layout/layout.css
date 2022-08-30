@@ -25,6 +25,12 @@ main {
     }
 }
 
+@media only screen and (max-width: 1023px) {
+    main {
+        margin: 0 5vw;
+    }
+}
+
 .background {
     position: absolute;
     background-color: #062230;

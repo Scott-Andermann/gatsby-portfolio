@@ -11,6 +11,9 @@ height: 100vh;
 display: flex;
 justify-content: space-between;
 pointer-events: none;
+@media (max-width: 1023px) {
+    display: none;
+}
 `
 
 const MarginOverlay = styled.div`

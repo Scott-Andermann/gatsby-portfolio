@@ -55,6 +55,10 @@ const SkillElement = styled.li`
 display: flex;
 align-items: center;
 line-height: 1.75rem;
+
+`
+
+const TextSpan = styled.span`
 opacity: 0.6;
 `
 
@@ -75,12 +79,12 @@ const About = () => {
             <Paragraph>Some of the technologies I have been working with recently: </Paragraph>
             <SkillsList>
                 
-                <SkillElement><ArrowBullet style={arrowStyle}></ArrowBullet>JavaScript (ES6+)</SkillElement>
-                <SkillElement><ArrowBullet style={arrowStyle}></ArrowBullet>Python</SkillElement>
-                <SkillElement><ArrowBullet style={arrowStyle}></ArrowBullet>HTML/CSS</SkillElement>
-                <SkillElement><ArrowBullet style={arrowStyle}></ArrowBullet>React/Redux</SkillElement>
-                <SkillElement><ArrowBullet style={arrowStyle}></ArrowBullet>Node.js</SkillElement>
-                <SkillElement><ArrowBullet style={arrowStyle}></ArrowBullet>TypeScript</SkillElement>
+                <SkillElement><ArrowBullet style={arrowStyle}></ArrowBullet><TextSpan>JavaScript (ES6+)</TextSpan></SkillElement>
+                <SkillElement><ArrowBullet style={arrowStyle}></ArrowBullet><TextSpan>Python</TextSpan></SkillElement>
+                <SkillElement><ArrowBullet style={arrowStyle}></ArrowBullet><TextSpan>HTML/CSS</TextSpan></SkillElement>
+                <SkillElement><ArrowBullet style={arrowStyle}></ArrowBullet><TextSpan>React/Redux</TextSpan></SkillElement>
+                <SkillElement><ArrowBullet style={arrowStyle}></ArrowBullet><TextSpan>Node.js</TextSpan></SkillElement>
+                <SkillElement><ArrowBullet style={arrowStyle}></ArrowBullet><TextSpan>TypeScript</TextSpan></SkillElement>
             </SkillsList>
         </AboutContainer>
     )

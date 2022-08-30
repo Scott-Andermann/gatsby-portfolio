@@ -12,11 +12,12 @@ import stl from '../../images/stlcompressed.gif';
 
 const ContentContainer = styled.div`
 position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: left;
-    align-items: center;`
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: left;
+align-items: center;
+`
 
     
 const OverlayDiv = styled.div`
@@ -28,16 +29,27 @@ right: 0;
 top: 0;
 height: 100%;
 width: 50%;
+@media (max-width: 1024px) {
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+}
 `
 
 const DescriptorDiv = styled.div`
 display: flex;
 flex-direction: column;
-justify-content: right;
 background-color: #104966;
 text-align: right;
 border-radius: 3px;
 padding: 1.5rem;
+@media (max-width: 1024px) {
+    height: 100%;
+    width: 91%;
+    margin: auto;
+    text-align: left;
+    justify-content: space-around;
+}
 `
 
 const ProjectTitle = styled.h3`
@@ -54,6 +66,9 @@ const ProjectImg = styled.img`
 height: 40vh;
 width: 60%;
 border-radius: 3px;
+@media (max-width: 1024px) {
+    margin: auto;
+}
 `
 
 const ProjectContent = ({content}) => {
@@ -85,8 +100,9 @@ const ProjectContent = ({content}) => {
                 <DescriptorDiv>
                     <ProjectTitle>{content.name}</ProjectTitle>
                     <ProjectDescription>{content.description}</ProjectDescription>
+                    <Tools toolsList={content.tools} className='tablet'/>
                 </DescriptorDiv>
-                <Tools toolsList={content.tools}/>
+                <Tools toolsList={content.tools} className='desktop'/>
             </OverlayDiv>
         </ContentContainer>
     )

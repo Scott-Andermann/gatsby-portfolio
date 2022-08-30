@@ -9,7 +9,11 @@
     justify-content: center;
     align-items: center;
     bottom: 0;
-    border-bottom: 1px solid white;
+    /* border-bottom: 1px solid white; */
     /* background: linear-gradient(#062230 0%, #104966 0%); */
     width: 100%
+}
+
+.job-arrow {
+    margin-bottom: -5px;
 }
