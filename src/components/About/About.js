@@ -15,6 +15,9 @@ font-size: 1rem;
 font-weight: normal;
 color: #00d3a2;
 margin-right: 1.5rem;
+@media (max-width: 500px) {
+    margin-right: 0;
+}
 `
 
 export const HeadingContainer = styled.div`
@@ -34,6 +37,7 @@ max-width: 50vw;
 `
 
 export const Heading = styled.h2`
+font-size: clamp(10px, 2vw, 30px)
 color: #F2F2F2;
 margin-right: 2rem;
 white-space: nowrap;
@@ -42,13 +46,16 @@ white-space: nowrap;
 const Paragraph = styled.p`
 line-height: 1.75rem;
 opacity: 0.6;
-width: 600px;
+width: 100%;
 margin-bottom: 2rem;
 `
 
 const SkillsList = styled.ul`
 columns: 2;
 width: 50%;
+@media (max-width: 700px) {
+    width: 100%;
+}
 `
 
 const SkillElement = styled.li`
