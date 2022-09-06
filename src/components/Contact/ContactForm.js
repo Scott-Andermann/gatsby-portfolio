@@ -1,6 +1,10 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import ExitIcon from '../../images/ExitIcon';
 import './ContactForm.css';
+
+
+const exitIconStyle = {fill: '#FF6639', height: '50px', width: '50px'}
 
 function ContactForm({ isShowing, closeForm, exitButton }) {
     const [name, setName] = useState('');
@@ -84,7 +88,8 @@ function ContactForm({ isShowing, closeForm, exitButton }) {
         }}>
 
             <form ref={form} className='contact-form' onSubmit={sendEmail}>
-                <button className='exit-button' onClick={exitButton}>X</button>
+                <div className='exit-button' onClick={exitButton}><ExitIcon style={exitIconStyle} /></div>
+                
                 <label className='contact-label'>
                     Name
                     <input className='contact-form-input' type='text' name='from_name' value={name} onChange={handleNameChange} />
