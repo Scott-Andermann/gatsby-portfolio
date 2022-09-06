@@ -95,7 +95,7 @@ const ProjectContent = ({content}) => {
 
     return (
         <ContentContainer>
-            <ProjectImg src={src(content.src)} />
+            
             <OverlayDiv>
                 <DescriptorDiv>
                     <ProjectTitle>{content.name}</ProjectTitle>

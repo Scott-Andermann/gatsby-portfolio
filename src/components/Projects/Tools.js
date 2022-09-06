@@ -16,10 +16,16 @@ margin-left: auto;
 margin-right: 0;
 justify-content: space-between;
 align-items: center;
-width: 80%;
+width: 320px;
 padding: 1rem;
-padding-right: 1.5rem;
+padding-right: 0;
+@media (max-width: 750px) {
+    width: 100%;
+    padding: 1rem 0;
+    margin: 0 auto;
+    flex-direction: column;
 
+}
 `
 
 const ToolSpan = styled.span`
