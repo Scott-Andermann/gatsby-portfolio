@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import Project2 from './Project2';
-import Project from './Project';
 import { HeadingContainer, NumberSpan, Heading } from '../About/About';
 import { projectInfo } from './projectInfo';
 

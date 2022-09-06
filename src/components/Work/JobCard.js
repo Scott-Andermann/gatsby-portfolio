@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React from 'react';
 import yamaha from '../../images/yamaha.jpg'
 import husqvarna from '../../images/husqvarna.jpg';
 import wessol from '../../images/flowzone.png';
@@ -61,7 +61,7 @@ font-weight: 500;
 font-size: 1.2rem;
 `
 
-const JobCard = ({job, width}) => {
+const JobCard = ({job}) => {
 
     const src = () => {
         switch (job.company) {
@@ -73,8 +73,7 @@ const JobCard = ({job, width}) => {
                 return husqvarna;
         }
     }
-    // style={job.id % 2 != 0 ? {flexDirection: 'row'} : {flexDirection: 'row-reverse'}}
-    console.log(width);
+
     return (
         <CardContainer alignment={job.id % 2 !=0 ? 'row' : 'row-reverse'}>
             <JobImage src={src()} alt='work image'/>
