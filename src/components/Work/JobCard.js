@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import yamaha from '../../images/yamaha.jpg'
 import husqvarna from '../../images/husqvarna.jpg';
 import wessol from '../../images/flowzone.png';
@@ -10,6 +10,7 @@ position: relative;
 height: 350px;
 display: flex;
 margin-bottom: 3rem;
+flex-direction: ${props => props.alignment};
 @media (max-width: 900px) {
     justify-content: center;
 }
@@ -24,10 +25,12 @@ padding-bottom: 0;
 padding-top: 0;
 line-height: 1.25;
 z-index: 1000;
+padding-left: ${props => props.leftPad};
 @media (max-width: 900px) {
     width: 450px;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+    padding-left: 2rem;
 }
 `
 
@@ -58,7 +61,7 @@ font-weight: 500;
 font-size: 1.2rem;
 `
 
-const JobCard = ({job}) => {
+const JobCard = ({job, width}) => {
 
     const src = () => {
         switch (job.company) {
@@ -70,10 +73,12 @@ const JobCard = ({job}) => {
                 return husqvarna;
         }
     }
+    // style={job.id % 2 != 0 ? {flexDirection: 'row'} : {flexDirection: 'row-reverse'}}
+    console.log(width);
     return (
-        <CardContainer style={job.id % 2 != 0 ? {flexDirection: 'row'} : {flexDirection: 'row-reverse'} }>
+        <CardContainer alignment={job.id % 2 !=0 ? 'row' : 'row-reverse'}>
             <JobImage src={src()} alt='work image'/>
-            <JobDescriptor style={job.id % 2 != 0 ? {paddingLeft: '2rem'} : {paddingLeft: 0}} >
+            <JobDescriptor leftPad={job.id % 2 != 0 ? '2rem' : 0} >
                 <h3 style={{fontSize: '1.5rem'}}>{job.company}</h3>
                 <h4>{job.title}</h4>
                 <p>{job.duration}</p>

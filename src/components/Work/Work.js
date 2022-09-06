@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import { workInfo } from "./workInfo";
 import { HeadingContainer, NumberSpan, Heading } from '../About/About';
@@ -14,10 +14,17 @@ position: relative;
 
 
 const Work = () => {
-  const [active, setActive] = useState(workInfo.length);
+  const ref = useRef();
+  const [width, setWidth] = useState(0)
+
+  // console.log(document.getElementById('container').clientWidth);
+
+  // useEffect(() => {
+  //   setWidth(document.getElementById('container').clientWidth)
+  // }, [])
 
   return (
-    <ContainerDiv>
+    <ContainerDiv id='container'>
       <HeadingContainer>
         <Heading><NumberSpan>03. </NumberSpan>Where I've Worked</Heading>
       </HeadingContainer>
