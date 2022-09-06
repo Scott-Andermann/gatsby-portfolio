@@ -19,6 +19,7 @@ position: relative;
 const ProjectImg = styled.img`
 position: absolute;
 height: 70%;
+width: 70%;
 left: 0;
 bottom: 0px;
 border-radius: 3px;

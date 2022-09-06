@@ -16,7 +16,7 @@ const Projects = () => {
     return (
         <ContainerDiv>
             <HeadingContainer>
-                <Heading><NumberSpan>02. </NumberSpan>Things I have built</Heading>
+                <Heading><NumberSpan>02. </NumberSpan>Things I've built</Heading>
             </HeadingContainer>            
             <Project2 projectInfo={projectInfo}/>
             {/* Add cards of smaller projects */}
