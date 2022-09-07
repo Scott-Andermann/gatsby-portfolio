@@ -1,19 +1,16 @@
 import * as React from "react";
 import Layout from "../components/Layout/layout";
 import { graphql } from "gatsby";
-// import Jobs from "../components/Jobs/Jobs";
 import Intro from "../components/Intro/Intro";
 import About from "../components/About/About";
 import Projects from "../components/Projects/Projects";
 import Work from "../components/Work/Work";
 import Footer from "../components/Footer/Footer";
-// import Code from "../components/Code/Code";
-// import Hobbies from "../components/Hobbies/Hobbies";
 import '@fontsource/roboto/';
 import '@fontsource/roboto/700.css';
 import '@fontsource/roboto/900.css';
 
-const IndexPage = ({data}) => {
+const IndexPage = () => {
 
   const [isShowing, setIsShowing] = React.useState(false);
 
@@ -24,9 +21,6 @@ const IndexPage = ({data}) => {
       <Projects />
       <Work />
       <Footer setIsShowing={setIsShowing}/>
-      {/* <Code></Code>
-      <Jobs></Jobs>
-      <Hobbies data={data}></Hobbies> */}
     </Layout>
   )
 }
