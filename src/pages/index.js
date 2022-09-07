@@ -23,7 +23,7 @@ const IndexPage = ({data}) => {
       <About />
       <Projects />
       <Work />
-      <Footer />
+      <Footer setIsShowing={setIsShowing}/>
       {/* <Code></Code>
       <Jobs></Jobs>
       <Hobbies data={data}></Hobbies> */}

@@ -2,22 +2,49 @@ import React from "react";
 import styled from "styled-components";
 import FadeIn from "../Animations/FadeIn";
 import { HeadingContainer, NumberSpan, Heading } from "../About/About";
+import ContactItem from "./ContactItem";
+
 
 const FooterContainer = styled.section`
-height: 35vh;
+min-height: 10vh;
 width: 100%;
 position: relative;
 color: white;
 `
 
-const Footer = () => {
+const ContactList = styled.ul`
+display: flex;
+list-style: none;
+`
+
+
+const contactInfo = [
+    {id: 1, type: 'Email', contact: 'ScottAndermann@gmail.com', link: 'mailto:scottandermann@gmail.com'},
+    {id: 2, type: 'Phone', contact: '630.863.5072'},
+    {id: 3, type: 'GitHub', contact: 'Scott-Andermann', link: 'https://github.com/Scott-Andermann'},
+    {id: 4, type: 'LinkedIn', contact: 'Scott Andermann', link: 'https://www.linkedin.com/in/scott-andermann'},
+];
+
+
+
+const Footer = ({setIsShowing}) => {
     return (
         <FadeIn>
             <FooterContainer>
                 <HeadingContainer>
                     <Heading><NumberSpan>04. </NumberSpan>Let's Connect!</Heading>
                 </HeadingContainer>
-
+                <div className='contact-button' onClick={() => setIsShowing(true)}>
+                    <h3 className='contact-button-text'>Give me a shout</h3>
+                </div>
+                <div style={{height: '4rem'}}></div>
+                <h4>Or get in touch using any of the following:</h4>
+                <div style={{height: '2rem'}}></div>
+                <footer>
+                    <ContactList>
+                        {contactInfo.length > 0 && contactInfo.map(element => <ContactItem key={element.id} element={element}/>)}
+                    </ContactList>
+                </footer>
             </FooterContainer>
         </FadeIn>
     )

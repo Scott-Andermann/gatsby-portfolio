@@ -4,6 +4,10 @@ import github from '../../images/github65ccb8.png';
 // import email from '../../images/email.png';
 // import phone from '../../images/phone.png';
 import linkedin from '../../images/linkedin.png';
+import EmailIcon from '../../images/EmailIcon';
+import GithubIcon from '../../images/GithubIcon';
+import LinkedinIcon from '../../images/LinkedinIcon';
+import * as colors from '../colors';
 
 const SocialList = styled.ul`
 list-style: none;
@@ -15,7 +19,7 @@ bottom: 0;
     content: "";
     display: block;
     border-left: 1px solid #F2F2F2;
-    height: 27vh;
+    height: 22vh;
     color: white;
     opacity: 0.6;
 }
@@ -26,15 +30,22 @@ height: 32px;
 `;
 
 const SocialElement = styled.li`
-margin: 32px 0;
+margin: 16px 0;
 `;
+
+const iconStyle = {
+  height: '32px',
+  width: '32px',
+  fill: `${colors.accentColor1}ad`
+}
 
 const LeftOverlay = () => {
   
   return (
     <SocialList>
-        <li><a href='https://github.com/Scott-Andermann' target="_blank" rel='noreferrer'><SocialIcon src={github} alt='contact icon github' /></a></li>
-        <SocialElement><a href='https://linkedin.com/in/Scott-Andermann' target="_blank" rel='noreferrer'><SocialIcon src={linkedin} alt='contact icon linkedin' /></a></SocialElement>
+        <SocialElement><a href='https://github.com/Scott-Andermann' target="_blank" rel='noreferrer'><GithubIcon style={iconStyle}/></a></SocialElement>
+        <SocialElement><a href='https://linkedin.com/in/Scott-Andermann' target="_blank" rel='noreferrer'><LinkedinIcon style={iconStyle}/></a></SocialElement>
+        <SocialElement><a href='mailto:scottandermann@gmail.com'><EmailIcon style={iconStyle}/></a></SocialElement>
     </SocialList>
   )
 };

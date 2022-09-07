@@ -81,7 +81,7 @@ const JobCard = ({job}) => {
                 {/* <h4>{job.title}</h4> */}
                 <p>{job.duration}</p>
                 <ul style={{paddingInlineStart: '40px'}}>
-                    {job.actions.length > 0 && job.actions.map(action => <li key={action[0]}>{action}</li>)}
+                    {job.actions.length > 0 && job.actions.map((action, index) => <li key={index}>{action}</li>)}
                 </ul>
                 <LinkButton onClick={() => window.open(job.website)}>Learn More</LinkButton>
             </JobDescriptor>
