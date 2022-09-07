@@ -24,6 +24,19 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/huck.jpg`, // This path is relative to the root of the site.
       },
-    }
+    },
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        color: 'tomato',
+        showSpinner: true,
+      }
+    },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        // Add any options here
+      },
+    },
   ],
 }

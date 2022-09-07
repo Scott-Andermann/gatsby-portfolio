@@ -81,9 +81,9 @@ const JobCard = ({job}) => {
     }
 
     return (
-        <CardContainer alignment={job.id % 2 !=0 ? 'row' : 'row-reverse'}>
+        <CardContainer alignment={job.id % 2 !== 0 ? 'row' : 'row-reverse'}>
             <JobImage src={src()} alt='work image'/>
-            <JobDescriptor leftPad={job.id % 2 != 0 ? '2rem' : 0} rightPad={job.id % 2 != 0 ? 0 : '2rem'}>
+            <JobDescriptor leftPad={job.id % 2 !== 0 ? '2rem' : 0} rightPad={job.id % 2 !== 0 ? 0 : '2rem'}>
                 <h2>{job.company} - <JobTitle>{job.title}</JobTitle></h2>
                 {/* <h4>{job.title}</h4> */}
                 <p>{job.duration}</p>
