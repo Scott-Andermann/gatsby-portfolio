@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import FadeIn from '../Animations/FadeIn';
 import Project2 from './Project2';
 import { HeadingContainer, NumberSpan, Heading } from '../About/About';
 import { projectInfo } from './projectInfo';
@@ -13,13 +14,15 @@ color: white;
 const Projects = () => {
 
     return (
-        <ContainerDiv>
-            <HeadingContainer>
-                <Heading><NumberSpan>02. </NumberSpan>Things I've built</Heading>
-            </HeadingContainer>            
-            <Project2 projectInfo={projectInfo}/>
-            {/* Add cards of smaller projects */}
-        </ContainerDiv>
+        <FadeIn>
+            <ContainerDiv>
+                <HeadingContainer>
+                    <Heading><NumberSpan>02. </NumberSpan>Things I've built</Heading>
+                </HeadingContainer>            
+                <Project2 projectInfo={projectInfo}/>
+                {/* Add cards of smaller projects */}
+            </ContainerDiv>
+        </FadeIn>
     )
 };
 

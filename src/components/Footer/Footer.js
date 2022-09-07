@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import FadeIn from "../Animations/FadeIn";
 import { HeadingContainer, NumberSpan, Heading } from "../About/About";
 
 const FooterContainer = styled.section`
@@ -11,12 +12,14 @@ color: white;
 
 const Footer = () => {
     return (
-        <FooterContainer>
-            <HeadingContainer>
-                <Heading><NumberSpan>04. </NumberSpan>Let's Connect!</Heading>
-            </HeadingContainer>
+        <FadeIn>
+            <FooterContainer>
+                <HeadingContainer>
+                    <Heading><NumberSpan>04. </NumberSpan>Let's Connect!</Heading>
+                </HeadingContainer>
 
-        </FooterContainer>
+            </FooterContainer>
+        </FadeIn>
     )
 }
 

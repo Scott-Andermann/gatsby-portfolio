@@ -49,12 +49,21 @@ text-align: right;
     align-items: center;
 }`
 
-const ProjectHeading = styled.h3`
+const ProjectHeading = styled.h2`
 padding: 1rem 0;
 `
 
 const Description = styled.div`
+@media (max-width: 600px) {
+    display: none;
+}
 `
+
+const ShortDescription = styled.div`
+display: none;
+@media (max-width: 600px) {
+    display: block;
+}`
 
 const ProjectContent2 = ({content}) => {
 
@@ -83,6 +92,7 @@ const ProjectContent2 = ({content}) => {
             <DescriptorDiv className='project-descriptor'>
                 <ProjectHeading>{content.name}</ProjectHeading>
                 <Description>{content.description}</Description>
+                <ShortDescription>{content.shortDescription}</ShortDescription>
                 <Tools toolsList={content.tools} />
             </DescriptorDiv>
         </ContainerDiv>

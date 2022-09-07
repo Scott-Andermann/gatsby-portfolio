@@ -3,6 +3,7 @@ export const projectInfo = [
         name: '3D STL Previewer',
         tools: ['Javascript', 'React', 'ThreeJS'],
         description: '.STL files are often used for 3D printing, I wanted to build a tool that was simple to use and allowed a preview of any model without requiring any software intallation.  This project is built with React components and uses ThreeJS for the 3D render engine.  There is also a connection to the Thingiverse API, an open-source database of 3D models, for searching for new models.',
+        shortDescription: 'This tool is used for quickly previewing files used for 3D printing.  A browser based previewer lets users preview files without installing software and on mobile devices.',
         src: 'stl',
         github: 'https://github.com/Scott-Andermann/stl-viewer'
     },
@@ -10,6 +11,7 @@ export const projectInfo = [
         name: 'Warranty Tracker',
         tools: ['Python', 'Plotly', 'ShopifyAPI'],
         description: 'I built this web-app to track yearly and monthly warranty spending trends.  This simple dashboard and reporting findings throughout the company on a monthly basis, this tool has helped drive a 50% YoY reduction in warranty spending.  This is connected to our Shopify store and collects data daily on all transactions.',
+        shortDescription: 'I built this web-app to track yearly and monthly spending trends.  This tool as helped drive a 50% YoY reduction in warranty spending by focusing efforts on high value projects.',
         src: 'warranty',
         github: 'https://github.com/Scott-Andermann/shopify-warranty'
     },
@@ -17,6 +19,7 @@ export const projectInfo = [
         name: 'Online Review Scraper',
         tools: ['Python', 'NLTK', 'BS4'],
         description: 'This web scraper was built using Beautiful Soup 4 to gather reviews from Amazon and Home Depot.  Scraping was performed in compliance with the published robots.txt specification for each site.  After gathering the reviews, there are tools that can be used to analyze and summarize the data including sentiment analysis using NLTK and time based analysis to understand market trends.',
+        shortDescription: 'This web scraper was built using Beautiful Soup 4 to gather reviews from Amazon and Home Depot.  Included are tools to analyze rating trends and review sentiment.',
         src: 'sentiment',
         github: 'https://github.com/Scott-Andermann/review-scraper'
     },

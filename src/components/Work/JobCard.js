@@ -20,7 +20,6 @@ const JobDescriptor = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: space-between;
-padding: 1rem;
 padding-bottom: 0;
 padding-top: 0;
 line-height: 1.25;
@@ -36,7 +35,7 @@ padding-left: ${props => props.leftPad};
 
 const JobImage = styled.img`
 height: 350px;
-width: 400px;
+width: 450px;
 border-radius: 3px;
 @media (max-width: 900px) {
     position: absolute;
@@ -78,8 +77,8 @@ const JobCard = ({job}) => {
         <CardContainer alignment={job.id % 2 !=0 ? 'row' : 'row-reverse'}>
             <JobImage src={src()} alt='work image'/>
             <JobDescriptor leftPad={job.id % 2 != 0 ? '2rem' : 0} >
-                <h3 style={{fontSize: '1.5rem'}}>{job.company}</h3>
-                <h4>{job.title}</h4>
+                <h2>{job.company} - <span style={{fontSize: '1.17rem'}}>{job.title}</span></h2>
+                {/* <h4>{job.title}</h4> */}
                 <p>{job.duration}</p>
                 <ul style={{paddingInlineStart: '40px'}}>
                     {job.actions.length > 0 && job.actions.map(action => <li key={action[0]}>{action}</li>)}

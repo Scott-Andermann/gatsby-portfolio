@@ -1,13 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
+import FadeIn from '../Animations/FadeIn';
 import ArrowBullet from '../../images/ArrowBullet';
 import './About.css';
 
 const AboutContainer = styled.section`
-height: 75vh;
+min-height: 20vh;
 width: 100%;
 position: relative;
 color: white;
+margin-bottom: 4rem;
 `
 
 export const NumberSpan = styled.span`
@@ -75,25 +77,41 @@ const arrowStyle = {
     fill: '#FF6639'
 }
 
+const variants = {
+    offscreen: {
+      opacity: 0
+    },
+    onscreen: {
+        opacity: 1,
+        transition: {
+            type: 'ease',
+            duration: 0.5
+        }
+    }
+};
+
 const About = () => {
 
     return (
-        <AboutContainer className='about'>
-            <HeadingContainer>
-                <Heading><NumberSpan>01. </NumberSpan>About Me</Heading>
-            </HeadingContainer>
-            <Paragraph>Hi! My name is Scott and I enjoy building all types of things.</Paragraph>
-            <Paragraph>Some of the technologies I have been working with recently: </Paragraph>
-            <SkillsList>
-                
-                <SkillElement><ArrowBullet style={arrowStyle}></ArrowBullet><TextSpan>JavaScript (ES6+)</TextSpan></SkillElement>
-                <SkillElement><ArrowBullet style={arrowStyle}></ArrowBullet><TextSpan>Python</TextSpan></SkillElement>
-                <SkillElement><ArrowBullet style={arrowStyle}></ArrowBullet><TextSpan>HTML/CSS</TextSpan></SkillElement>
-                <SkillElement><ArrowBullet style={arrowStyle}></ArrowBullet><TextSpan>React/Redux</TextSpan></SkillElement>
-                <SkillElement><ArrowBullet style={arrowStyle}></ArrowBullet><TextSpan>Node.js</TextSpan></SkillElement>
-                <SkillElement><ArrowBullet style={arrowStyle}></ArrowBullet><TextSpan>TypeScript</TextSpan></SkillElement>
-            </SkillsList>
-        </AboutContainer>
+        <FadeIn>
+            <AboutContainer className='about'>
+                <HeadingContainer>
+                    <Heading><NumberSpan>01. </NumberSpan>About Me</Heading>
+                </HeadingContainer>
+                <Paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi scelerisque eu ultrices vitae. Non enim praesent elementum facilisis leo vel fringilla. Id leo in vitae turpis massa sed. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien. Vitae et leo duis ut diam quam nulla. Integer malesuada nunc vel risus commodo viverra maecenas. Egestas dui id ornare arcu odio ut sem nulla. Augue neque gravida in fermentum et sollicitudin ac orci phasellus. Justo donec enim diam vulputate ut pharetra sit amet aliquam. Vitae justo eget magna fermentum iaculis eu non diam. Nunc congue nisi vitae suscipit tellus mauris a. Nibh sit amet commodo nulla facilisi nullam vehicula. Non blandit massa enim nec dui nunc mattis enim.</Paragraph>
+                <Paragraph>Some of the technologies I have been working with recently: </Paragraph>
+                <SkillsList>
+                    
+                    <SkillElement><ArrowBullet style={arrowStyle}></ArrowBullet><TextSpan>JavaScript (ES6+)</TextSpan></SkillElement>
+                    <SkillElement><ArrowBullet style={arrowStyle}></ArrowBullet><TextSpan>Python</TextSpan></SkillElement>
+                    <SkillElement><ArrowBullet style={arrowStyle}></ArrowBullet><TextSpan>HTML/CSS</TextSpan></SkillElement>
+                    <SkillElement><ArrowBullet style={arrowStyle}></ArrowBullet><TextSpan>React/Redux</TextSpan></SkillElement>
+                    <SkillElement><ArrowBullet style={arrowStyle}></ArrowBullet><TextSpan>Node.js</TextSpan></SkillElement>
+                    <SkillElement><ArrowBullet style={arrowStyle}></ArrowBullet><TextSpan>TypeScript</TextSpan></SkillElement>
+                </SkillsList>
+            </AboutContainer>
+        </FadeIn>
+
     )
 };
 
