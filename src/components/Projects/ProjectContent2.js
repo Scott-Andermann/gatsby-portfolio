@@ -54,6 +54,7 @@ padding: 1rem 0;
 `
 
 const Description = styled.div`
+opacity: 0.8;
 @media (max-width: 600px) {
     display: none;
 }
@@ -61,6 +62,7 @@ const Description = styled.div`
 
 const ShortDescription = styled.div`
 display: none;
+opacity: 0.8;
 @media (max-width: 600px) {
     display: block;
 }`

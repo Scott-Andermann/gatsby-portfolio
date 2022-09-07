@@ -13,6 +13,7 @@ margin-bottom: 0.5rem;
 
 const LinkItem = styled.a`
 color: white;
+opacity: 0.8;
 text-decoration: none;
 display: flex;
 align-items: center;
@@ -21,6 +22,7 @@ align-items: center;
 const ContactSpan = styled.span`
 display: flex;
 align-items: center;
+opacity: 0.8;
 `
 
 const iconStyle = {

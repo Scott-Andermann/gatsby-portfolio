@@ -86,8 +86,8 @@ const JobCard = ({job}) => {
             <JobDescriptor leftPad={job.id % 2 !== 0 ? '2rem' : 0} rightPad={job.id % 2 !== 0 ? 0 : '2rem'}>
                 <h2>{job.company} - <JobTitle>{job.title}</JobTitle></h2>
                 {/* <h4>{job.title}</h4> */}
-                <p>{job.duration}</p>
-                <ul style={{paddingInlineStart: '40px'}}>
+                <p style={{opacity: 0.6}}>{job.duration}</p>
+                <ul style={{paddingInlineStart: '40px', opacity: 0.6}}>
                     {job.actions.length > 0 && job.actions.map((action, index) => <li key={index}>{action}</li>)}
                 </ul>
                 <LinkButton onClick={() => window.open(job.website)}>Learn More</LinkButton>

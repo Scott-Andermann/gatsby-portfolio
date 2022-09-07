@@ -1,20 +1,14 @@
 import React from "react";
 
-function EmailIcon({style}) {
-    return (
-        <svg xmlns="http://www.w3.org/2000/svg"     
-        width={style.width}
-        height={style.height}
-        >
-        <path fill={style.fill}
-            d="M12.69 12.06a1 1 0 01-1.34 0L2.87 4.35A2 2 0 014 4h16a2 2 0 011.13.35z"
-          ></path>
-          <path
-            fill={style.fill}
-            d="M22 6.26V17a3 3 0 01-3 3H5a3 3 0 01-3-3V6.26l8.68 7.92a2 2 0 001.32.49 2 2 0 001.33-.51z"
-          ></path>
-        </svg>
-      );
-    }
+function EmailIcon({ style }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 512 512"
+    height={style.height}
+    width={style.width}>
+      <path fill={style.fill} d="M256 352c-16.53 0-33.06-5.422-47.16-16.41L0 173.2V400c0 26.5 21.49 48 48 48h416c26.51 0 48-21.49 48-48V173.2L303.2 335.7C289.1 346.6 272.5 352 256 352zM16.29 145.3l212.2 165.1c16.19 12.6 38.87 12.6 55.06 0l212.2-165.1C505.1 137.3 512 125 512 112c0-26.51-21.5-48-48-48H48C21.49 64 0 85.49 0 112c0 13 6.01 25.3 16.29 33.3z"></path>
+    </svg>
+  );
+}
 
 export default EmailIcon;

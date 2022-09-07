@@ -1,7 +1,10 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import styled from 'styled-components';
 import ReactLoading from 'react-loading';
 import * as colors from '../colors';
+import './Animations.css';
+
+
 
 const MainDiv = styled.div`
 height: 100vh;
@@ -13,12 +16,33 @@ justify-content: center;
 align-items: center;
 `
 
-const Loading = () => {
+const LoadingDiv = styled.div`
+opacity: 0;
+animation: ${props => props.isLoading ? "fadeIn" : "fadeOut"} 1.2s;
+`
+
+const Loading = ({isLoading, setRender, render}) => {
+
+    useEffect(() => {
+        if (isLoading) setRender(true);
+      }, [isLoading]);
+
+    const onAnimationEnd = () => {
+        if (!isLoading) setRender(false);
+    }
+
+    console.log(isLoading);
+
     return (
-        <MainDiv>
-            <ReactLoading type='bars' color={`${colors.accentColor1}`} />
+        render && <MainDiv>
+            <LoadingDiv
+                onAnimationEnd={onAnimationEnd}
+                isLoading={isLoading}>
+                <ReactLoading type='bars' color={`${colors.accentColor1}`} />
+            </LoadingDiv>
         </MainDiv>
     )
 }
 
 export default Loading;
+

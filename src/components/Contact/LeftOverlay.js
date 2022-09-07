@@ -8,6 +8,7 @@ import EmailIcon from '../../images/EmailIcon';
 import GithubIcon from '../../images/GithubIcon';
 import LinkedinIcon from '../../images/LinkedinIcon';
 import * as colors from '../colors';
+import PhoneIcon from '../../images/PhoneIcon';
 
 const SocialList = styled.ul`
 list-style: none;

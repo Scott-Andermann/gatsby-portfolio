@@ -14,17 +14,19 @@ const IndexPage = () => {
 
   const [isShowing, setIsShowing] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const [render, setRender] = useState(true);
 
   useEffect(() => {
     const loadData = async () => {
-      await new Promise((r) => setTimeout(r, 2000));
+      await new Promise((r) => setTimeout(r, 800));
       setIsLoading(isLoading => !isLoading);
     };
     loadData();
   }, [])
-  if(isLoading) {
+  
+  if(render) {
     return (
-      <Loading />
+      <Loading isLoading={isLoading} setRender={setRender} render={render}/>
     )
   }
   return (

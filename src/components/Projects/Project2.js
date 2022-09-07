@@ -58,28 +58,6 @@ const Project2 = ({projectInfo}) => {
         setPage([page + newDirection, newDirection]);
     }
 
-    let divHeight = 0;
-
-    useEffect(() => {
-        let cancelled = false;
-        const getHeight = () => {
-            const {current} = ref;
-            if (!current || !current.clientHeight) {
-                if (!cancelled) {
-                    requestAnimationFrame(getHeight);
-                }
-            } else {
-                console.log(current.clientHeight);
-                divHeight = current.clientHeight;
-            }
-        }
-        getHeight();
-        return () => {
-            cancelled = true;
-        }
-    }, [])
-
-    // console.log(divHeight);
 
     return (
         <ProjectContainer className='projects'>

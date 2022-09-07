@@ -75,7 +75,6 @@ const Tools = ({toolsList, className}) => {
     }
 
     function buildTool(tool) {
-        console.log(tool)
         return (
             <ToolSpan key={tool}>
                 {iconPicker(tool)}

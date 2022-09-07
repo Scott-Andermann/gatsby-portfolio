@@ -42,7 +42,7 @@ const Footer = ({setIsShowing}) => {
                     <h3 className='contact-button-text'>Give me a shout</h3>
                 </div>
                 <div style={{height: '4rem'}}></div>
-                <h4>Or get in touch using any of the following:</h4>
+                <h4 style={{opacity: 0.8}}>Or get in touch using any of the following:</h4>
                 <div style={{height: '2rem'}}></div>
                 <footer>
                     <ContactList>
