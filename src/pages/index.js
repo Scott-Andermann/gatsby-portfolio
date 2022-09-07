@@ -1,35 +1,43 @@
-import * as React from "react";
-import Layout from "../components/layout";
-import { graphql } from "gatsby";
-import Jobs from "../components/Jobs/Jobs";
+import React, {useState, useEffect} from "react";
+import Layout from "../components/Layout/layout";
+import Loading from "../components/Animations/Loading";
 import Intro from "../components/Intro/Intro";
-import Code from "../components/Code/Code";
-import Hobbies from "../components/Hobbies/Hobbies";
+import About from "../components/About/About";
+import Projects from "../components/Projects/Projects";
+import Work from "../components/Work/Work";
+import Footer from "../components/Footer/Footer";
 import '@fontsource/roboto/';
-import '@fontsource/roboto/900.css'
+import '@fontsource/roboto/700.css';
+import '@fontsource/roboto/900.css';
 
-const IndexPage = ({data}) => {
+const IndexPage = () => {
 
-  const [isShowing, setIsShowing] = React.useState(false);
+  const [isShowing, setIsShowing] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+  const [render, setRender] = useState(true);
 
+  // useEffect(() => {
+  //   const loadData = async () => {
+  //     await new Promise((r) => setTimeout(r, 800));
+  //     setIsLoading(isLoading => !isLoading);
+  //   };
+  //   loadData();
+  // }, [])
+  
+  // if(render) {
+  //   return (
+  //     <Loading isLoading={isLoading} setRender={setRender} render={render}/>
+  //   )
+  // }
   return (
     <Layout isShowing={isShowing} setIsShowing={setIsShowing}>
       <Intro setIsShowing={setIsShowing}></Intro>
-      <Code></Code>
-      <Jobs></Jobs>
-      <Hobbies data={data}></Hobbies>
+      <About />
+      <Projects />
+      <Work />
+      <Footer setIsShowing={setIsShowing}/>
     </Layout>
   )
 }
 
-export const query = graphql`
-  query {
-    allFile {
-      nodes {
-        name
-      }
-    }
-  }
-`
-
-export default IndexPage
+export default IndexPage;

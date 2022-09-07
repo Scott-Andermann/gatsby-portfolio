@@ -1,0 +1,23 @@
+.left-arrow {
+    transform: rotate(180deg);
+}
+
+.left-arrow:hover, .right-arrow:hover {
+    scale: 1.15;
+}
+
+.animate {
+    width: 100%;
+    position: absolute;
+    user-select: none;
+}
+
+.animate-container {
+    min-height: 50vh;
+}
+
+@media only screen and (max-width: 400px) {
+    .animate-container {
+        min-height: 60vh;
+    }
+}

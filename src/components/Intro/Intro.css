@@ -1,13 +1,12 @@
 .intro {
     position: relative;
-    height: 90vh;
-    margin-left: 15vw;
-    margin-right: 25vw;
+    height: 100vh;
     margin-top: 20vh;
     text-align: left;
 }
 
 .greeting {
+    margin-bottom: 0.5rem;
     color: #00d3a2;
     font-size: 1rem;
 }
@@ -25,6 +24,7 @@
 }
 
 .descriptor {
+    margin-top: 1rem;
     font-size: 1rem;
     color: hsla(0,0%,100%, 0.6);
 }
@@ -35,14 +35,14 @@
 }
 
 .green-highlight {
-    color: #00d3a2
+    color: #00d3a2;
 }
 
 .contact-button {
     padding: 1rem;
     width: 200px;
     border-radius: 5px;
-    margin-top: 5rem;
+    margin-top: 4rem;
     border: 2px solid #FF6639;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;

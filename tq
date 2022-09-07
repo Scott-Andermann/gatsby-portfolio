@@ -1,0 +1,113 @@
+[33mcommit 61bd762cd000add963b16647912a803abf9c1d62[m[33m ([m[1;36mHEAD -> [m[1;32mstyle-update[m[33m)[m
+Author: Scott A <scottandermann@gmail.com>
+Date:   Mon Aug 8 10:38:34 2022 -0400
+
+    fixed bottom contact
+
+[33mcommit f85a813643e6f541e8f37d06780a3edf61c0cec2[m
+Author: Scott A <scottandermann@gmail.com>
+Date:   Mon Aug 8 08:53:57 2022 -0400
+
+    Fixed mobile css
+
+[33mcommit 1e7c0c0a6c21e0051b6e9cb045676ac114d68f7d[m
+Author: Scott A <scottandermann@gmail.com>
+Date:   Fri Aug 5 16:42:47 2022 -0400
+
+    Updated color scheme and footer
+
+[33mcommit 6ec75c0bbf76e59598388dd83bc99d86d9d30a8f[m
+Author: Scott A <scottandermann@gmail.com>
+Date:   Fri Aug 5 16:16:29 2022 -0400
+
+    updated styling; added transitions
+
+[33mcommit b438adbc566a4be9ff8edae18b17c1cedb87edae[m
+Author: Scott A <scottandermann@gmail.com>
+Date:   Fri Aug 5 11:42:34 2022 -0400
+
+    Added lower contact button
+
+[33mcommit 2ce9c6cefcb7923bea07fda496e08803b69bbfb9[m
+Author: Scott A <scottandermann@gmail.com>
+Date:   Fri Aug 5 11:25:24 2022 -0400
+
+    updated responsivness; added email handling
+
+[33mcommit f6b7079a49305c0e95ad9dfb7e783ce85542243b[m
+Author: Scott A <scottandermann@gmail.com>
+Date:   Thu Aug 4 14:44:22 2022 -0400
+
+    Added review scraper, updated styling
+
+[33mcommit ac344cfa21c42032c3928534b5a937320a12fc0e[m
+Author: Scott A <scottandermann@gmail.com>
+Date:   Wed Aug 3 16:10:09 2022 -0400
+
+    updated color scheme and contact form
+
+[33mcommit e1184e0ccaf166eeb60ea2e2150d19b76319b9c6[m
+Author: Scott A <scottandermann@gmail.com>
+Date:   Wed Aug 3 15:37:51 2022 -0400
+
+    removed jquery call; added favicon
+
+[33mcommit c7697cc1df100708482bf8ea4041ce97046effce[m
+Author: Scott A <scottandermann@gmail.com>
+Date:   Wed Aug 3 15:26:49 2022 -0400
+
+    updated mobile styling - added contact form
+
+[33mcommit 38162d2163b0815ea1740265b6630f3caf8a1b0f[m
+Author: Scott A <scottandermann@gmail.com>
+Date:   Tue Aug 2 16:00:04 2022 -0400
+
+    lowercased image files
+
+[33mcommit ee5dade7560d388a68bc33b0cff6627d5650bd0d[m
+Author: Scott A <scottandermann@gmail.com>
+Date:   Tue Aug 2 15:44:08 2022 -0400
+
+    updated styling & layout
+
+[33mcommit 6339d6d2a6e77e350f3e7d6ce295b3d4590535ad[m
+Author: Scott A <scottandermann@gmail.com>
+Date:   Tue Aug 2 14:50:57 2022 -0400
+
+    updated config file
+
+[33mcommit bdb293b1b873fddcd4a2d90943dc1371fa7e4cf7[m
+Author: Scott A <scottandermann@gmail.com>
+Date:   Tue Aug 2 14:47:54 2022 -0400
+
+    updated image locations
+
+[33mcommit a5dc9980123c557cb3a20e9565b4ded5ea0f2f41[m
+Author: Scott A <scottandermann@gmail.com>
+Date:   Tue Aug 2 09:56:55 2022 -0400
+
+    Added hobby section - updated styling
+
+[33mcommit 2d55f53b97040d367bb2cc5880d3ef28eaae114c[m
+Author: Scott A <scottandermann@gmail.com>
+Date:   Tue Aug 2 08:40:34 2022 -0400
+
+    updated intro image
+
+[33mcommit cdc36d8effd09531d76ad2637a982894cad01067[m
+Author: Scott A <scottandermann@gmail.com>
+Date:   Mon Aug 1 17:36:13 2022 -0400
+
+    saving in progress work
+
+[33mcommit a617847404c034d946cb71f813cc9fdeaa5d7c61[m
+Author: Scott A <scottandermann@gmail.com>
+Date:   Mon Aug 1 09:22:16 2022 -0400
+
+    first commit
+
+[33mcommit d2f4df3e627982bb056a241f0f6b5ca6426e8831[m
+Author: Scott A <scottandermann@gmail.com>
+Date:   Mon Aug 1 09:17:32 2022 -0400
+
+    Initial commit from gatsby
