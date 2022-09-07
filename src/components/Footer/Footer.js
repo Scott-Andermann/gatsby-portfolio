@@ -15,6 +15,10 @@ color: white;
 const ContactList = styled.ul`
 display: flex;
 list-style: none;
+margin-left: -1rem;
+@media (max-width: 900px){
+    flex-direction: column;
+}
 `
 
 

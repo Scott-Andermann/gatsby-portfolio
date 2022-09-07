@@ -7,7 +7,8 @@ import PhoneIcon from "../../images/PhoneIcon";
 import * as colors from '../colors';
 
 const Item = styled.li`
-margin-right: 2rem;
+margin-left: 1rem;
+margin-bottom: 0.5rem;
 `
 
 const LinkItem = styled.a`

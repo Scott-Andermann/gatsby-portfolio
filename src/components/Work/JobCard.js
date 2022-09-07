@@ -25,6 +25,7 @@ padding-top: 0;
 line-height: 1.25;
 z-index: 1000;
 padding-left: ${props => props.leftPad};
+padding-right: ${props => props.rightPad};
 @media (max-width: 900px) {
     width: 450px;
     padding-top: 1.5rem;
@@ -60,6 +61,12 @@ font-weight: 500;
 font-size: 1.2rem;
 `
 
+const JobTitle = styled.span`
+font-size: 1.17rem;
+color: ${colors.accentColor1};
+white-space: nowrap;
+`
+
 const JobCard = ({job}) => {
 
     const src = () => {
@@ -76,8 +83,8 @@ const JobCard = ({job}) => {
     return (
         <CardContainer alignment={job.id % 2 !=0 ? 'row' : 'row-reverse'}>
             <JobImage src={src()} alt='work image'/>
-            <JobDescriptor leftPad={job.id % 2 != 0 ? '2rem' : 0} >
-                <h2>{job.company} - <span style={{fontSize: '1.17rem'}}>{job.title}</span></h2>
+            <JobDescriptor leftPad={job.id % 2 != 0 ? '2rem' : 0} rightPad={job.id % 2 != 0 ? 0 : '2rem'}>
+                <h2>{job.company} - <JobTitle>{job.title}</JobTitle></h2>
                 {/* <h4>{job.title}</h4> */}
                 <p>{job.duration}</p>
                 <ul style={{paddingInlineStart: '40px'}}>
