@@ -9,6 +9,7 @@ import JSIcon from "../../images/JSIcon";
 import ReactIcon from "../../images/ReactIcon";
 import CSSIcon from "../../images/CSSIcon";
 import MLIcon from "../../images/MLIcon";
+import NodeIcon from "../../images/NodeIcon";
 
 const ToolsDiv = styled.div`
 display: flex; 
@@ -69,6 +70,8 @@ const Tools = ({toolsList, className}) => {
                 return <CSSIcon style={iconStyle} />
             case 'Machine Learning':
                 return <MLIcon style={iconStyle} />
+            case 'NodeJS':
+                return <NodeIcon style={iconStyle} />
             default:
                 return <ComputerIcon style={iconStyle} />
         }

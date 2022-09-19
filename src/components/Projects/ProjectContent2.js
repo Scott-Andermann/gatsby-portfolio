@@ -7,6 +7,9 @@ import powerMeter from '../../images/powermeter.jpg';
 import weather from '../../images/weather.png';
 import sentiment from '../../images/sentiment.png';
 import stl from '../../images/stlcompressed.gif';
+import guess from '../../images/guess.png';
+import ExternalIcon from "../../images/ExternalIcon";
+import GithubIcon from "../../images/GithubIcon";
 
 const ContainerDiv = styled.div`
 height: 50vh;
@@ -19,7 +22,7 @@ position: relative;
 const ProjectImg = styled.img`
 position: absolute;
 height: 70%;
-width: 70%;
+// width: 70%;
 left: 0;
 bottom: 0px;
 border-radius: 3px;
@@ -67,6 +70,25 @@ opacity: 0.8;
     display: block;
 }`
 
+const Links = styled.div`
+opacity: 0.8;
+display: flex;
+justify-content: flex-end;
+@media (max-width: 750px) {
+    margin-left: -20px;
+}
+`
+const Link = styled.a`
+margin-left 20px;
+`
+
+const iconStyle = {
+    height: '22px',
+    width: '22px',
+    fill: '#FFFFFF',
+    fillOpacity: 0.8
+}
+
 const ProjectContent2 = ({content}) => {
 
     const src = () => {
@@ -83,6 +105,8 @@ const ProjectContent2 = ({content}) => {
                 return sentiment;
             case 'stl':
                 return stl;
+            case 'guess':
+                return guess;
             default:
                 return weather;
         }
@@ -96,6 +120,10 @@ const ProjectContent2 = ({content}) => {
                 <Description>{content.description}</Description>
                 <ShortDescription>{content.shortDescription}</ShortDescription>
                 <Tools toolsList={content.tools} />
+                <Links>
+                    {content.github && <Link href={content.github} target='_blank'><GithubIcon style={iconStyle} /></Link>}
+                    {content.link && <Link href={content.link} target='_blank'><ExternalIcon style={iconStyle} /></Link>}
+                </Links>
             </DescriptorDiv>
         </ContainerDiv>
     )

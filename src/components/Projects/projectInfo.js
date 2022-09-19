@@ -1,11 +1,21 @@
 export const projectInfo = [
     {
+        name: 'Guess That Score',
+        tools: ['NodeJS', 'React', 'CSS'],
+        description: 'This site acts as a automatic moderator for a game my friends and I play during college football season.  The goal is guess the correct score of the game only knowing who is playing and how much time is remaining in the game, lowest score wins.  Scores are updated every 5 minutes from an external source and a single game is served simultaneously to all users via a websocket connection.',
+        shortDescription: 'This site moderates a game my friends and I play during college football season.  The goal is to correctly guess the score of the game only knowing who is playing, lowest score wins.',
+        src: 'guess',
+        github: 'https://github.com/Scott-Andermann/guess-that-score',
+        link: 'https://www.guessthatscore.fun/'
+    },
+    {
         name: '3D STL Previewer',
         tools: ['Javascript', 'React', 'ThreeJS'],
         description: '.STL files are often used for 3D printing, I wanted to build a tool that was simple to use and allowed a preview of any model without requiring any software intallation.  This project is built with React components and uses ThreeJS for the 3D render engine.  There is also a connection to the Thingiverse API, an open-source database of 3D models, for searching for new models.',
         shortDescription: 'This tool is used for quickly previewing files used for 3D printing.  A browser based previewer lets users preview files without installing software and on mobile devices.',
         src: 'stl',
-        github: 'https://github.com/Scott-Andermann/stl-viewer'
+        github: 'https://github.com/Scott-Andermann/stl-viewer',
+        link: 'https://glistening-basbousa-105611.netlify.app/'
     },
     {
         name: 'Warranty Tracker',
@@ -13,7 +23,7 @@ export const projectInfo = [
         description: 'I built this web-app to track yearly and monthly warranty spending trends.  This simple dashboard and reporting findings throughout the company on a monthly basis, this tool has helped drive a 50% YoY reduction in warranty spending.  This is connected to our Shopify store and collects data daily on all transactions.',
         shortDescription: 'I built this web-app to track yearly and monthly spending trends.  This tool as helped drive a 50% YoY reduction in warranty spending by focusing efforts on high value projects.',
         src: 'warranty',
-        github: 'https://github.com/Scott-Andermann/shopify-warranty'
+        github: 'https://github.com/Scott-Andermann/shopify-warranty',
     },
     {
         name: 'Online Review Scraper',
