@@ -15,7 +15,7 @@ export const projectInfo = [
         shortDescription: 'This tool is used for quickly previewing files used for 3D printing.  A browser based previewer lets users preview files without installing software and on mobile devices.',
         src: 'stl',
         github: 'https://github.com/Scott-Andermann/stl-viewer',
-        link: 'https://glistening-basbousa-105611.netlify.app/'
+        link: 'https://look-stl.netlify.app'
     },
     {
         name: 'Warranty Tracker',

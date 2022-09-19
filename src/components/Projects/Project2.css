@@ -6,6 +6,10 @@
     scale: 1.15;
 }
 
+.external-icon:hover {
+    scale: 1.15;
+}
+
 .animate {
     width: 100%;
     position: absolute;

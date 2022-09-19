@@ -121,8 +121,8 @@ const ProjectContent2 = ({content}) => {
                 <ShortDescription>{content.shortDescription}</ShortDescription>
                 <Tools toolsList={content.tools} />
                 <Links>
-                    {content.github && <Link href={content.github} target='_blank'><GithubIcon style={iconStyle} /></Link>}
-                    {content.link && <Link href={content.link} target='_blank'><ExternalIcon style={iconStyle} /></Link>}
+                    {content.github && <Link className='external-icon' href={content.github} target='_blank'><GithubIcon  style={iconStyle} /></Link>}
+                    {content.link && <Link className='external-icon' href={content.link} target='_blank'><ExternalIcon  style={iconStyle} /></Link>}
                 </Links>
             </DescriptorDiv>
         </ContainerDiv>
