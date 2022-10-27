@@ -67,7 +67,7 @@ const Intro = ({ setIsShowing }) => {
                             type: 'ease',
                             delay: 1.2
                         }}>I am a <span className='orange-highlight'>Software Engineer</span> specializing in modern technologies like Javascript and Python with years of experience as a <span className='green-highlight'>Product Manager</span> and <span className='green-highlight'>Mechanical Engineer</span></motion.p>
-                    <motion.div className='contact-button' onClick={() => setIsShowing(true)}
+                    <motion.button className='contact-button' onClick={() => setIsShowing(true)}
                     initial={{opacity: 0}}
                     animate={{opacity: 1}}
                     transition={{
@@ -76,7 +76,7 @@ const Intro = ({ setIsShowing }) => {
                         delay: 1.6
                     }}>
                         <h3 className='contact-button-text'>Give me a shout</h3>
-                    </motion.div>
+                    </motion.button>
                 </div>
             </div>
 

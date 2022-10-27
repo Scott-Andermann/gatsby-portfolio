@@ -2,8 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import Tools from "./Tools";
 import warranty from '../../images/warranty.png';
-import flappyBird from '../../images/flappybird2.gif';
-import powerMeter from '../../images/powermeter.jpg';
 import weather from '../../images/weather.png';
 import sentiment from '../../images/sentiment.png';
 import stl from '../../images/stlcompressed.gif';
@@ -93,10 +91,6 @@ const ProjectContent2 = ({content}) => {
 
     const src = () => {
         switch (content.src) {
-            case 'powerMeter':
-                return powerMeter;
-            case 'flappy':
-                return flappyBird;
             case 'weather':
                 return weather;
             case 'warranty':

@@ -59,6 +59,7 @@ border-radius: 20px;
 color: white;
 font-weight: 500;
 font-size: 1.2rem;
+cursor: pointer;
 `
 
 const JobTitle = styled.span`
