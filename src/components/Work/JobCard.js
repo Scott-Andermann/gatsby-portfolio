@@ -78,6 +78,8 @@ const JobCard = ({job}) => {
                 return wessol;
             case 'HUSQVARNA':
                 return husqvarna;
+            default:
+                return <></>
         }
     }
 
