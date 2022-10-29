@@ -1,5 +1,21 @@
 export const projectInfo = [
     {
+        name: 'Warranty Tracker',
+        tools: ['React', 'Python', 'mySQL'],
+        description: 'I built this web-app to track yearly and monthly warranty spending trends.  This simple dashboard and reporting findings throughout the company on a monthly basis, this tool has helped drive a 50% YoY reduction in warranty spending.  This is connected to our Shopify store and collects data daily on all transactions.  After transaction data is gathered, it is stored on AWS RDS for various querying activities.',
+        shortDescription: 'I built this web-app to track yearly and monthly spending trends.  This tool as helped drive a 50% YoY reduction in warranty spending by focusing efforts on high value projects.',
+        src: 'warranty',
+        github: 'https://github.com/Scott-Andermann/shopify-warranty-mysql',
+    },
+    {
+        name: 'Online Review Scraper',
+        tools: ['Python', 'NLTK', 'Javascript'],
+        description: 'This web scraper was built using Beautiful Soup 4 to gather reviews from Amazon.  Scraping was performed in compliance with the published robots.txt specification for each site.  After gathering the reviews, there are tools that can be used to analyze and summarize the data including sentiment analysis using NLTK and time based analysis to understand market trends.  I have recently converted this to a web-app so that it is easier to use.',
+        shortDescription: 'This web scraper was built using Beautiful Soup 4 to gather and analyze reviews from Amazon.  Included are tools to analyze rating trends and review sentiment.',
+        src: 'sentiment',
+        github: 'https://github.com/Scott-Andermann/review-scraper'
+    },
+    {
         name: 'Guess That Score',
         tools: ['NodeJS', 'React', 'CSS'],
         description: 'This site acts as a automatic moderator for a game my friends and I play during college football season.  The goal is guess the correct score of the game only knowing who is playing and how much time is remaining in the game, lowest score wins.  Scores are updated every 5 minutes from an external source and a single game is served simultaneously to all users via a websocket connection.',
@@ -16,22 +32,6 @@ export const projectInfo = [
         src: 'stl',
         github: 'https://github.com/Scott-Andermann/stl-viewer',
         link: 'https://look-stl.netlify.app'
-    },
-    {
-        name: 'Warranty Tracker',
-        tools: ['Python', 'Plotly', 'ShopifyAPI'],
-        description: 'I built this web-app to track yearly and monthly warranty spending trends.  This simple dashboard and reporting findings throughout the company on a monthly basis, this tool has helped drive a 50% YoY reduction in warranty spending.  This is connected to our Shopify store and collects data daily on all transactions.',
-        shortDescription: 'I built this web-app to track yearly and monthly spending trends.  This tool as helped drive a 50% YoY reduction in warranty spending by focusing efforts on high value projects.',
-        src: 'warranty',
-        github: 'https://github.com/Scott-Andermann/shopify-warranty',
-    },
-    {
-        name: 'Online Review Scraper',
-        tools: ['Python', 'NLTK', 'BS4'],
-        description: 'This web scraper was built using Beautiful Soup 4 to gather reviews from Amazon and Home Depot.  Scraping was performed in compliance with the published robots.txt specification for each site.  After gathering the reviews, there are tools that can be used to analyze and summarize the data including sentiment analysis using NLTK and time based analysis to understand market trends.',
-        shortDescription: 'This web scraper was built using Beautiful Soup 4 to gather reviews from Amazon and Home Depot.  Included are tools to analyze rating trends and review sentiment.',
-        src: 'sentiment',
-        github: 'https://github.com/Scott-Andermann/review-scraper'
     },
 // these three will go into minor projects cards
     // {
