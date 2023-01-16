@@ -1,14 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import github from '../../images/github65ccb8.png';
-// import email from '../../images/email.png';
-// import phone from '../../images/phone.png';
-import linkedin from '../../images/linkedin.png';
 import EmailIcon from '../../images/EmailIcon';
 import GithubIcon from '../../images/GithubIcon';
 import LinkedinIcon from '../../images/LinkedinIcon';
 import * as colors from '../colors';
-import PhoneIcon from '../../images/PhoneIcon';
 
 const SocialList = styled.ul`
 list-style: none;
@@ -24,10 +19,6 @@ bottom: 0;
     color: white;
     opacity: 0.6;
 }
-`;
-
-const SocialIcon = styled.img`
-height: 32px;
 `;
 
 const SocialElement = styled.li`

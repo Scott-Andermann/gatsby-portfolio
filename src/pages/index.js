@@ -1,6 +1,5 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import Layout from "../components/Layout/layout";
-import Loading from "../components/Animations/Loading";
 import Intro from "../components/Intro/Intro";
 import About from "../components/About/About";
 import Projects from "../components/Projects/Projects";
@@ -13,8 +12,6 @@ import '@fontsource/roboto/900.css';
 const IndexPage = () => {
 
   const [isShowing, setIsShowing] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
-  const [render, setRender] = useState(true);
 
   // useEffect(() => {
   //   const loadData = async () => {

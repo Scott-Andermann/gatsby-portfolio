@@ -5,6 +5,7 @@ import warranty from '../../images/warranty.png';
 import sentiment from '../../images/sentiment.png';
 import stl from '../../images/stlcompressed.gif';
 import guess from '../../images/guess.png';
+import sprayer from '../../images/sprayer.png';
 import ExternalIcon from "../../images/ExternalIcon";
 import GithubIcon from "../../images/GithubIcon";
 
@@ -98,6 +99,8 @@ const ProjectContent2 = ({content}) => {
                 return stl;
             case 'guess':
                 return guess;
+            case 'sprayer':
+                return sprayer;
             default:
                 return <></>;
         }

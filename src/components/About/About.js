@@ -77,19 +77,6 @@ const arrowStyle = {
     fill: '#FF6639'
 }
 
-const variants = {
-    offscreen: {
-      opacity: 0
-    },
-    onscreen: {
-        opacity: 1,
-        transition: {
-            type: 'ease',
-            duration: 0.5
-        }
-    }
-};
-
 const About = () => {
 
     return (
@@ -104,11 +91,13 @@ const About = () => {
                 <SkillsList>
                     
                     <SkillElement><ArrowBullet style={arrowStyle}></ArrowBullet><TextSpan>JavaScript (ES6+)</TextSpan></SkillElement>
+                    <SkillElement><ArrowBullet style={arrowStyle}></ArrowBullet><TextSpan>TypeScript</TextSpan></SkillElement>
                     <SkillElement><ArrowBullet style={arrowStyle}></ArrowBullet><TextSpan>Python</TextSpan></SkillElement>
                     <SkillElement><ArrowBullet style={arrowStyle}></ArrowBullet><TextSpan>HTML/CSS</TextSpan></SkillElement>
                     <SkillElement><ArrowBullet style={arrowStyle}></ArrowBullet><TextSpan>React/Redux</TextSpan></SkillElement>
                     <SkillElement><ArrowBullet style={arrowStyle}></ArrowBullet><TextSpan>Node.js</TextSpan></SkillElement>
-                    <SkillElement><ArrowBullet style={arrowStyle}></ArrowBullet><TextSpan>TypeScript</TextSpan></SkillElement>
+                    <SkillElement><ArrowBullet style={arrowStyle}></ArrowBullet><TextSpan>SQL</TextSpan></SkillElement>
+                    <SkillElement><ArrowBullet style={arrowStyle}></ArrowBullet><TextSpan>AWS</TextSpan></SkillElement>
                 </SkillsList>
             </AboutContainer>
         </FadeIn>

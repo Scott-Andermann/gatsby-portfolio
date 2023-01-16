@@ -10,6 +10,9 @@ import ReactIcon from "../../images/ReactIcon";
 import CSSIcon from "../../images/CSSIcon";
 import MLIcon from "../../images/MLIcon";
 import NodeIcon from "../../images/NodeIcon";
+import TypeScriptIcon from "../../images/Typescript";
+import ReduxIcon from "../../images/ReduxIcon";
+import DatabaseIcon from "../../images/DatabaseIcon";
 
 const ToolsDiv = styled.div`
 display: flex; 
@@ -52,6 +55,7 @@ const iconStyle = {
 
 const Tools = ({toolsList, className}) => {
 
+
     const iconPicker = (tool) => {
         switch (tool) {
             case 'Python':
@@ -72,6 +76,12 @@ const Tools = ({toolsList, className}) => {
                 return <MLIcon style={iconStyle} />
             case 'NodeJS':
                 return <NodeIcon style={iconStyle} />
+            case 'TypeScript':
+                return <TypeScriptIcon style={iconStyle} />
+            case 'Redux':
+                return <ReduxIcon style={iconStyle} />
+            case 'mySQL':
+                return <DatabaseIcon style={iconStyle} />
             default:
                 return <ComputerIcon style={iconStyle} />
         }

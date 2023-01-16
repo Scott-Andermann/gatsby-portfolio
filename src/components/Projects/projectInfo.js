@@ -8,6 +8,14 @@ export const projectInfo = [
         github: 'https://github.com/Scott-Andermann/shopify-warranty-mysql',
     },
     {
+        name: 'IoT Sprayer',
+        tools: ['TypeScript', 'Redux', 'React'],
+        description: 'This project is connected via Bluetooth Low Energy to a FlowZone sprayer with a high accuracy flowmeter.  When launched this app and the new sprayer will help professionals drive higher quality, lower costs, and a better understanding of their business.  This app is built in Typescript using the React-Native framework and state management is handled by Redux.',
+        shortDescription: 'IoT enabled sprayer and ap for accurate real time flow measurement and location tracking with accompanying app built with React-Native.',
+        src: 'sprayer',
+        github: 'https://github.com/Scott-Andermann/fz-sprayer-app',
+    },
+    {
         name: 'Online Review Scraper',
         tools: ['Python', 'NLTK', 'Javascript'],
         description: 'This web scraper was built using Beautiful Soup 4 to gather reviews from Amazon.  Scraping was performed in compliance with the published robots.txt specification for each site.  After gathering the reviews, there are tools that can be used to analyze and summarize the data including sentiment analysis using NLTK and time based analysis to understand market trends.  I have recently converted this to a web-app so that it is easier to use.',
@@ -24,16 +32,17 @@ export const projectInfo = [
         github: 'https://github.com/Scott-Andermann/guess-that-score',
         link: 'https://www.guessthatscore.fun/'
     },
-    {
-        name: '3D STL Previewer',
-        tools: ['Javascript', 'React', 'ThreeJS'],
-        description: '.STL files are often used for 3D printing, I wanted to build a tool that was simple to use and allowed a preview of any model without requiring any software intallation.  This project is built with React components and uses ThreeJS for the 3D render engine.  There is also a connection to the Thingiverse API, an open-source database of 3D models, for searching for new models.',
-        shortDescription: 'This tool is used for quickly previewing files used for 3D printing.  A browser based previewer lets users preview files without installing software and on mobile devices.',
-        src: 'stl',
-        github: 'https://github.com/Scott-Andermann/stl-viewer',
-        link: 'https://look-stl.netlify.app'
-    },
+
 // these three will go into minor projects cards
+    // {
+    //     name: '3D STL Previewer',
+    //     tools: ['Javascript', 'React', 'ThreeJS'],
+    //     description: '.STL files are often used for 3D printing, I wanted to build a tool that was simple to use and allowed a preview of any model without requiring any software intallation.  This project is built with React components and uses ThreeJS for the 3D render engine.  There is also a connection to the Thingiverse API, an open-source database of 3D models, for searching for new models.',
+    //     shortDescription: 'This tool is used for quickly previewing files used for 3D printing.  A browser based previewer lets users preview files without installing software and on mobile devices.',
+    //     src: 'stl',
+    //     github: 'https://github.com/Scott-Andermann/stl-viewer',
+    //     link: 'https://look-stl.netlify.app'
+    // },
     // {
     //     name: 'Weather App',
     //     tools: ['Javascript', 'React', 'CSS'],

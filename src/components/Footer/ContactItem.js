@@ -41,6 +41,9 @@ const Icon = ({ type }) => {
             return <GithubIcon style={iconStyle} />
         case 'LinkedIn':
             return <LinkedinIcon style={iconStyle} />
+        default:
+            return <EmailIcon style={iconStyle} />
+
     }
 
 }

@@ -2,10 +2,11 @@ export const workInfo = [
     {
         company: 'WESSOL, LLC',
         id: 3,
-        title: 'Product Manager',
-        actions: ['Formalized product roadmaps roadmaps and requirements to solidify product strategy.', 
-        'Designed and created software tools to streamline business activities..', 
-        'Rendered support to sales staff on new and existing technical features.'],
+        title: 'Software Engineer',
+        actions: ['Crafted and maintained intuitive analysis tools to drive business efficiency', 
+        'Regularly communicated status with all levels of the organization.', 
+        'Cultivated fruitful relationships with customers to identify new opportunities.',
+        'Prioritized customer impact when making design decisions.',],
         duration: '2021 - Present',
         website: 'https://fzspray.com/'
     },
