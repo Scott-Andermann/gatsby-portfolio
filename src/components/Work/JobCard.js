@@ -1,7 +1,7 @@
 import React from 'react';
-import yamaha from '../../images/yamaha.jpg'
-import husqvarna from '../../images/husqvarna.jpg';
-import wessol from '../../images/flowzone.png';
+import yamaha from '../../images/webp/yamaha.webp'
+import husqvarna from '../../images/webp/husqvarna.webp';
+import wessol from '../../images/webp/flowzone.webp';
 import styled from 'styled-components';
 import * as colors from '../colors';
 
