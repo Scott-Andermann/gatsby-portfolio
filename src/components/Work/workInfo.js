@@ -1,6 +1,6 @@
 export const workInfo = [
     {
-        company: 'WEBSTAURANTSTORE',
+        company: 'WEBSTAURANT',
         id: 4,
         title: 'Front End Engineer',
         actions: ['Collaborated with UX/UI, product, and backend teams to enhance user experiences.', 'Optimized performance with lazy loading and code splitting, cutting page load times by 25%.', 'Developed repsonsive, accessible, and mobile-first features to improve user experience.'],

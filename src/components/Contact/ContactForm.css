@@ -1,16 +1,10 @@
 .contact-form-container {
-    position: fixed;
-    display: flex;
-    z-index: 10000;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 0;
-    margin-block-end: 0;
-    margin-block-start: 0;
-    opacity: 0;
     background: rgb(0,0,0);
-    transition: height opacity 0.5s
+    width: 100vw;
+}
+
+.contact-form-container::backdrop {
+    background: rgba(0,0,0,0.9);
 }
 
 .contact-form {
