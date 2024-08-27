@@ -20,7 +20,6 @@ const Projects = () => {
                     <Heading><NumberSpan>02. </NumberSpan>Things I've built</Heading>
                 </HeadingContainer>            
                 <Project2 projectInfo={projectInfo}/>
-                {/* Add cards of smaller projects */}
             </ContainerDiv>
         </FadeIn>
     )

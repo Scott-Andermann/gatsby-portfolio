@@ -1,14 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import Tools from "./Tools";
-// import warranty from '../../images/warranty.png';
 import warranty from '../../images/webp/warranty.webp'
-// import sentiment from '../../images/sentiment.png';
 import sentiment from '../../images/webp/sentiment.webp';
 import stl from '../../images/png/stlcompressed.gif';
-// import guess from '../../images/guess.png';
 import guess from '../../images/webp/guess.webp';
-// import sprayer from '../../images/sprayer.png';
 import sprayer from '../../images/webp/sprayer.webp';
 import ExternalIcon from "../../images/ExternalIcon";
 import GithubIcon from "../../images/GithubIcon";

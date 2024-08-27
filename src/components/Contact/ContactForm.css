@@ -39,9 +39,8 @@
 
 .contact-form-input {
     width: 100%;
-    padding: 0;
+    padding: 8px;
     font-size: 16px;
-    height: 30px;
     font-weight: 500;
     background-color: transparent;
     border: 2px solid #F2F2F2;
@@ -66,6 +65,8 @@
 .submit {
     height: 40px;
     background-color: transparent;
+    position: relative;
+    cursor: pointer;
     border: 2px solid #FF6639;
     border-radius: 3px;
     font-size: 20px;
@@ -91,6 +92,9 @@
     height: 30px;
     width: 30px;
     text-align: center;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 .exit-button:active {

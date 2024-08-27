@@ -13,6 +13,8 @@ import NodeIcon from "../../images/NodeIcon";
 import TypeScriptIcon from "../../images/Typescript";
 import ReduxIcon from "../../images/ReduxIcon";
 import DatabaseIcon from "../../images/DatabaseIcon";
+import NextIcon from "../../images/NextIcon";
+import ExpoIcon from "../../images/ExpoIcon";
 
 const ToolsDiv = styled.div`
 display: flex; 
@@ -82,6 +84,10 @@ const Tools = ({toolsList, className}) => {
                 return <ReduxIcon style={iconStyle} />
             case 'mySQL':
                 return <DatabaseIcon style={iconStyle} />
+            case 'NextJS':
+                return <NextIcon style={iconStyle} />
+            case 'Expo':
+                return <ExpoIcon style={iconStyle} />
             default:
                 return <ComputerIcon style={iconStyle} />
         }

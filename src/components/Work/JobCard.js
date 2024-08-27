@@ -2,6 +2,7 @@ import React from 'react';
 import yamaha from '../../images/webp/yamaha.webp'
 import husqvarna from '../../images/webp/husqvarna.webp';
 import wessol from '../../images/webp/flowzone.webp';
+import webstaurant from '../../images/webp/webstaurant.webp';
 import styled from 'styled-components';
 import * as colors from '../colors';
 
@@ -42,7 +43,7 @@ border-radius: 3px;
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
-    opacity: .5;
+    opacity: .25;
     width: 450px;
 }
 @media (max-width: 450px) {
@@ -78,6 +79,8 @@ const JobCard = ({job}) => {
                 return wessol;
             case 'HUSQVARNA':
                 return husqvarna;
+            case 'WEBSTAURANTSTORE':
+                return webstaurant;
             default:
                 return <></>
         }

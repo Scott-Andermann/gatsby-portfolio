@@ -2,10 +2,7 @@ import * as React from 'react';
 import './Intro.css';
 import { motion } from 'framer-motion';
 
-//I love building new things on the web and fixing old things in the real world
-//I'm a software engineer specializing in modern technologies like Javascript and Python, with years of experience
-//as a mechanical engineer and produc manager
-const Intro = ({ setIsShowing }) => {
+const Intro = ({ toggleModal }) => {
     return (
         <div className='intro'>
             {/* <MainHeading text='Hello there!' /> */}
@@ -67,7 +64,7 @@ const Intro = ({ setIsShowing }) => {
                             type: 'ease',
                             delay: 1.2
                         }}>I am a <span className='orange-highlight'>Software Engineer</span> specializing in modern technologies like Javascript and Python with years of experience as a <span className='green-highlight'>Product Manager</span> and <span className='green-highlight'>Mechanical Engineer</span></motion.p>
-                    <motion.button className='contact-button' onClick={() => setIsShowing(true)}
+                    <motion.button className='contact-button' onClick={toggleModal}
                     initial={{opacity: 0}}
                     animate={{opacity: 1}}
                     transition={{
